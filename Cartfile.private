@@ -1,0 +1,9 @@
+github "jspahrsummers/xcconfigs" "master"
+
+# Quick 1.1.0 (the currnently released verison) has an issue building when
+# Swiftlint is installed (see: https://github.com/Quick/Quick/pull/694). We're
+# pulling forward to the commit that fixes this issue, until Quick releases a
+# new version and we can remove this very specific version pinning.
+github "Quick/Quick" "101f944"
+
+github "Quick/Nimble"
