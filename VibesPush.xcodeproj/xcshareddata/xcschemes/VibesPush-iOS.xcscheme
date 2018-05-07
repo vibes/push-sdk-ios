@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "820"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <PostActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "env &gt; /tmp/build.txt">
+            </ActionContent>
+         </ExecutionAction>
+      </PostActions>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3549BB201DA389CD00C63030"
+               BuildableName = "VibesPush.framework"
+               BlueprintName = "VibesPush-iOS"
+               ReferencedContainer = "container:VibesPush.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3549BB601DA38ADB00C63030"
+               BuildableName = "VibesPushTests-iOS.xctest"
+               BlueprintName = "VibesPushTests-iOS"
+               ReferencedContainer = "container:VibesPush.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3721D5D61EE59E6600673B60"
+               BuildableName = "VibesPushIntegrationTests-iOS.xctest"
+               BlueprintName = "VibesPushIntegrationTests-iOS"
+               ReferencedContainer = "container:VibesPush.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3549BB201DA389CD00C63030"
+            BuildableName = "VibesPush.framework"
+            BlueprintName = "VibesPush-iOS"
+            ReferencedContainer = "container:VibesPush.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3549BB201DA389CD00C63030"
+            BuildableName = "VibesPush.framework"
+            BlueprintName = "VibesPush-iOS"
+            ReferencedContainer = "container:VibesPush.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "OS_ACTIVITY_MODE"
+            value = "${DEBUG_ACTIVITY_MODE}"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3549BB201DA389CD00C63030"
+            BuildableName = "VibesPush.framework"
+            BlueprintName = "VibesPush-iOS"
+            ReferencedContainer = "container:VibesPush.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "env &gt; /tmp/env.txt">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "3549BB201DA389CD00C63030"
+                     BuildableName = "VibesPush.framework"
+                     BlueprintName = "VibesPush-iOS"
+                     ReferencedContainer = "container:VibesPush.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
+      <PostActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "if [ &quot;true&quot; == ${ALREADYINVOKED:-false} ]&#10;then&#10;echo &quot;RECURSION Detected!&quot;&#10;else&#10;mkdir -p &quot;${SOURCE_ROOT}/${PRODUCT_NAME}/Frameworks/iOS/&quot;&#10;&#10;rm -fr /tmp/Vibes*&#10;&#10;xcodebuild -workspace &quot;${PRODUCT_NAME}.xcworkspace&quot; -scheme &quot;${SCHEME_NAME}&quot; ONLY_ACTIVE_ARCH=NO -configuration &quot;${CONFIGURATION}&quot; -arch arm64 ENABLE_BITCODE=YES OTHER_CFLAGS=&quot;-fembed-bitcode&quot; -sdk iphoneos clean build&#10;&#10;xcodebuild -workspace &quot;${PRODUCT_NAME}.xcworkspace&quot; -scheme &quot;${SCHEME_NAME}&quot; ONLY_ACTIVE_ARCH=NO -configuration &quot;${CONFIGURATION}&quot; -arch x86_64 ENABLE_BITCODE=YES OTHER_CFLAGS=&quot;-fembed-bitcode&quot; -sdk iphonesimulator clean build&#10;&#10;cp -R &quot;${INDEX_DATA_STORE_DIR}/../../Build/Products/${CONFIGURATION}-iphoneos/${PRODUCT_NAME}.framework&quot; /tmp&#10;&#10;cp -R &quot;${INDEX_DATA_STORE_DIR}/../../Build/Products/${CONFIGURATION}-iphonesimulator/${PRODUCT_NAME}.framework/Modules/${PRODUCT_NAME}.swiftmodule&quot; &quot;/tmp/${PRODUCT_NAME}.framework/Modules&quot;&#10;&#10;lipo -create -output &quot;/tmp/${PRODUCT_NAME}.framework/${PRODUCT_NAME}&quot; &quot;${INDEX_DATA_STORE_DIR}/../../Build/Products/${CONFIGURATION}-iphonesimulator/${PRODUCT_NAME}.framework/${PRODUCT_NAME}&quot; &quot;/tmp/${PRODUCT_NAME}.framework/${PRODUCT_NAME}&quot;&#10;&#10;cd &quot;/tmp/&quot;&#10;&#10;zip -r -X &quot;${PRODUCT_NAME}.zip&quot; &quot;${PRODUCT_NAME}.framework/&quot;&#10;&#10;mv &quot;/tmp/${PRODUCT_NAME}.framework.zip&quot; &quot;${SOURCE_ROOT}/${PRODUCT_NAME}/Frameworks/iOS/&quot;&#10;&#10;echo &quot;&#10;xcodebuild -workspace \&quot;${PRODUCT_NAME}.xcworkspace\&quot; -scheme \&quot;${SCHEME_NAME}\&quot; ONLY_ACTIVE_ARCH=NO -configuration \&quot;${CONFIGURATION}\&quot; -arch arm64 ENABLE_BITCODE=YES OTHER_CFLAGS=\&quot;-fembed-bitcode\&quot; -sdk iphoneos clean build\n\n&#10;xcodebuild -workspace \&quot;${PRODUCT_NAME}.xcworkspace\&quot; -scheme \&quot;${SCHEME_NAME}\&quot; ONLY_ACTIVE_ARCH=NO -configuration \&quot;${CONFIGURATION}\&quot; -arch x86_64 ENABLE_BITCODE=YES OTHER_CFLAGS=\&quot;-fembed-bitcode\&quot; -sdk iphonesimulator clean build\n\n&#10;cp -R \&quot;${INDEX_DATA_STORE_DIR}/../../Build/Products/${CONFIGURATION}-iphoneos/${PRODUCT_NAME}.framework\&quot; /tmp\n\n&#10;cp -R \&quot;${INDEX_DATA_STORE_DIR}/../../Build/Products/${CONFIGURATION}-iphonesimulator/${PRODUCT_NAME}.framework/Modules/${PRODUCT_NAME}.swiftmodule\&quot; \&quot;/tmp/${PRODUCT_NAME}.framework/Modules\&quot;\n\n&#10;lipo -create -output \&quot;/tmp/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\&quot; \&quot;${INDEX_DATA_STORE_DIR}/../../Build/Products/${CONFIGURATION}-iphonesimulator/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\&quot; \&quot;/tmp/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\&quot;&#10;&#10;&quot; &gt; /tmp/archive.txt&#10;fi">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "3549BB201DA389CD00C63030"
+                     BuildableName = "VibesPush.framework"
+                     BlueprintName = "VibesPush-iOS"
+                     ReferencedContainer = "container:VibesPush.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PostActions>
+   </ArchiveAction>
+</Scheme>
