@@ -1,0 +1,12 @@
+included:
+  - Sources
+  - Tests
+  - IntegrationTests
+
+line_length: 120
+trailing_comma: 
+  mandatory_comma: true
+identifier_name:
+  excluded:
+    - SDK_VERSION
+    - CREDENTIALS_KEY
