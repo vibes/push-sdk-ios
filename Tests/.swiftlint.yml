@@ -1,0 +1,10 @@
+disabled_rules:
+  - force_cast
+  - function_body_length
+  - file_length
+  - line_length
+  - type_body_length
+  - weak_delegate
+
+trailing_comma:
+  mandatory_comma: true
