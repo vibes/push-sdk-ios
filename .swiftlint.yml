@@ -1,0 +1,19 @@
+included:
+  - Sources
+  - Tests
+  - IntegrationTests
+
+line_length: 120
+trailing_comma:
+  mandatory_comma: true
+identifier_name:
+  excluded:
+    - SDK_VERSION
+    - CREDENTIALS_KEY
+    - REGISTER_PUSH_STATUS
+    - MAX_RETRY
+    - MAX_SEC
+    - _self
+    - id
+function_parameter_count:
+  warning: 6
