@@ -1,0 +1,40 @@
+#!/usr/bin/env ruby
+
+# syncs xcode project with current file structure
+require 'xcodeproj'
+
+project = Xcodeproj::Project.open('VibesPush.xcodeproj')
+
+def sync_target(project, group_name, target_name)
+  files = Dir["#{group_name}/*"]
+
+  group = project.groups.detect{ |g| g.path == group_name }
+  puts "Clearing group '#{group.display_name}'"
+  group.clear
+  puts "Adding files to '#{group.display_name}':"
+  file_refs = files.map{|file|
+    puts "  #{file}"
+    group.new_reference(File.basename(file))
+  }
+  puts "\n"
+  swift_file_refs = file_refs.select{|f| f.path.include?('.swift') }
+
+  target = project.native_targets.detect{ |t| t.display_name == target_name }
+  build_phase = target.source_build_phase
+
+  puts "Clearing build sources for target '#{target.display_name}'\n"
+  build_phase.clear
+
+  puts "Adding files to build sources for '#{target.display_name}':"
+  swift_file_refs.each{|ref|
+    puts "  #{ref.display_name}"
+    target.source_build_phase.add_file_reference(ref)
+  }
+  puts "\n"
+end
+
+sync_target(project, 'Sources', 'VibesPush-iOS')
+sync_target(project, 'Tests', 'VibesPushTests-iOS')
+
+project.save
+puts "Project synced!"
