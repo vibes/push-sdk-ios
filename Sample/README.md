@@ -1,0 +1,2 @@
+## Objective-C Sample Project
+This is a blank Objective-C app that simply installs the VibesPush pod locally so that CI can attempt to build it. This will verify that the SDK can build in an Objective-C project.
