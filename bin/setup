@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+require "pathname"
+
+# path to your application root.
+APP_ROOT = Pathname.new File.expand_path('../../',  __FILE__)
+
+Dir.chdir APP_ROOT do
+  puts "== Installing homebrew dependencies =="
+  system "brew update"
+  system "brew install swiftlint adr-tools"
+
+  puts "== Installing gem dependencies =="
+  system "gem install bundler --conservative"
+  system "bundle check || bundle install --path .bundle"
+end
