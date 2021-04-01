@@ -1,0 +1,6 @@
+clean: true
+min_acl: public
+exclude: 
+  - Tests/*
+  - IntegrationTests/*
+output: docs/public
