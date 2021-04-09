@@ -1,0 +1,4 @@
+#!/bin/bash
+
+set -e
+bundle exec jazzy --config .jazzy.internal.yaml
