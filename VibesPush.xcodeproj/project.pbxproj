@@ -1,0 +1,1538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0214AD041EE1E2F500AB1D41 /* LocalStorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0214AD031EE1E2F500AB1D41 /* LocalStorageType.swift */; };
+		023B11181EFAA70000C79B83 /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B11171EFAA70000C79B83 /* KeychainStorage.swift */; };
+		0255531A1F43415800DBFD36 /* InputStream+readToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025553191F43415800DBFD36 /* InputStream+readToString.swift */; };
+		02C88C671EE05450001626AD /* Vibes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C88C651EE05450001626AD /* Vibes.swift */; };
+		02C88C691EE05450001626AD /* HTTPResourceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C88C661EE05450001626AD /* HTTPResourceClient.swift */; };
+		02C88C811EE0561E001626AD /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C88C801EE0561E001626AD /* Credential.swift */; };
+		02C88C831EE059D4001626AD /* HTTPResourceClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C88C821EE059D4001626AD /* HTTPResourceClientSpec.swift */; };
+		02FE31F71EDDB708005E9E0C /* VibesPush.h in Headers */ = {isa = PBXBuildFile; fileRef = 02FE31F61EDDB708005E9E0C /* VibesPush.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F01A59022DDE55E00D86D37 /* GetInboxMessagesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F01A58F22DDE55E00D86D37 /* GetInboxMessagesOperation.swift */; };
+		2F01A59122DDEE4600D86D37 /* GetInboxMessagesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F01A58F22DDE55E00D86D37 /* GetInboxMessagesOperation.swift */; };
+		2F260FDD235FA9CD00CC403D /* GetInboxMessageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F260FDC235FA9CD00CC403D /* GetInboxMessageOperation.swift */; };
+		2F260FF0235FAFE500CC403D /* GetInboxMessageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F260FDC235FA9CD00CC403D /* GetInboxMessageOperation.swift */; };
+		2FAC03B722CA133E008C2D98 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC03B622CA133E008C2D98 /* Extensions.swift */; };
+		2FC1C7C322DDB54B00942AFD /* InboxMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC1C7B022DDB54B00942AFD /* InboxMessage.swift */; };
+		2FC1C7C422DDB55A00942AFD /* InboxMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC1C7B022DDB54B00942AFD /* InboxMessage.swift */; };
+		2FC1C7C722DDBF0E00942AFD /* InboxMessageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC1C7C522DDBEC400942AFD /* InboxMessageSpec.swift */; };
+		3549BB661DA38ADB00C63030 /* VibesPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3549BB211DA389CD00C63030 /* VibesPush.framework */; };
+		35CA2AC61E12925700147290 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CA2A971E12920400147290 /* Nimble.framework */; };
+		35CA2AC71E12925700147290 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CA2AB31E12920400147290 /* Quick.framework */; };
+		3721D5B81EE5930A00673B60 /* StubDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3721D5B71EE5930A00673B60 /* StubDevice.swift */; };
+		3721D5D21EE59B7600673B60 /* HTTPBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3721D5D11EE59B7600673B60 /* HTTPBehavior.swift */; };
+		3721D5D51EE59E1000673B60 /* AuthTokenBehaviorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3721D5D31EE59D9900673B60 /* AuthTokenBehaviorSpec.swift */; };
+		3721D5E71EE59E6600673B60 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CA2A971E12920400147290 /* Nimble.framework */; };
+		3721D5E81EE59E6600673B60 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CA2AB31E12920400147290 /* Quick.framework */; };
+		3721D5E91EE59E6600673B60 /* VibesPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3549BB211DA389CD00C63030 /* VibesPush.framework */; };
+		3721D6071EE5A0C400673B60 /* VibesAPISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3721D5F31EE59FD000673B60 /* VibesAPISpec.swift */; };
+		373B024D1F147100007C5B2A /* AppObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373B024C1F147100007C5B2A /* AppObserver.swift */; };
+		373C79871EF40B2600470E8B /* DeviceToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373C79861EF40B2600470E8B /* DeviceToken.swift */; };
+		373C799C1EF40CD900470E8B /* DeviceTokenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373C799A1EF40CA600470E8B /* DeviceTokenSpec.swift */; };
+		373C799E1EF40DCE00470E8B /* APIDefinitionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373C799D1EF40DCE00470E8B /* APIDefinitionSpec.swift */; };
+		374B50321EE2E174004197D1 /* StubHTTPResourceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B50311EE2E174004197D1 /* StubHTTPResourceClient.swift */; };
+		374B504E1EE2E561004197D1 /* VibesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B504D1EE2E561004197D1 /* VibesAPI.swift */; };
+		374B50621EE2E845004197D1 /* StubVibesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B50611EE2E845004197D1 /* StubVibesAPI.swift */; };
+		374B50931EE2F3B9004197D1 /* StubURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B50921EE2F3B9004197D1 /* StubURLSession.swift */; };
+		374B50951EE4C198004197D1 /* CredentialSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B50941EE4C198004197D1 /* CredentialSpec.swift */; };
+		374B50971EE4C469004197D1 /* ResourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B50961EE4C469004197D1 /* ResourceSpec.swift */; };
+		375DD4EA1EE06EE700696B24 /* HTTPResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375DD4E91EE06EE700696B24 /* HTTPResource.swift */; };
+		375DD4EC1EE0717C00696B24 /* APIDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375DD4EB1EE0717C00696B24 /* APIDefinition.swift */; };
+		375DD4F21EE0772600696B24 /* VibesSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375DD4ED1EE0754E00696B24 /* VibesSpec.swift */; };
+		375DD4F61EE07E0000696B24 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375DD4F51EE07E0000696B24 /* DeviceType.swift */; };
+		375DD4F91EE07F1C00696B24 /* DeviceTypeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375DD4F71EE07E4800696B24 /* DeviceTypeSpec.swift */; };
+		375DD4FB1EE08B5600696B24 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375DD4FA1EE08B5600696B24 /* JSONParser.swift */; };
+		375DD4FE1EE08CE300696B24 /* JSONParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375DD4FC1EE08BA900696B24 /* JSONParserSpec.swift */; };
+		375DD5041EE1CC9400696B24 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375DD5031EE1CC9400696B24 /* HTTPMethod.swift */; };
+		37647FD21F153E2B00DD63C1 /* Date+iso8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37647FD11F153E2B00DD63C1 /* Date+iso8601.swift */; };
+		37647FD51F153E9900DD63C1 /* EventSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37647FD31F153E9000DD63C1 /* EventSpec.swift */; };
+		3764803E1F16841300DD63C1 /* StubEventTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764803A1F16826300DD63C1 /* StubEventTracker.swift */; };
+		376480441F16B4F600DD63C1 /* EventTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376480431F16B4F500DD63C1 /* EventTracker.swift */; };
+		376480581F16C25400DD63C1 /* EventCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376480571F16C25400DD63C1 /* EventCollection.swift */; };
+		3764805A1F16C26F00DD63C1 /* PersistentEventStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376480591F16C26F00DD63C1 /* PersistentEventStorage.swift */; };
+		3764805F1F16C36400DD63C1 /* PersistentEventStorageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764805E1F16C36400DD63C1 /* PersistentEventStorageSpec.swift */; };
+		377F1F661EE73A3D000706DB /* VibesResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F1F651EE73A3D000706DB /* VibesResult.swift */; };
+		379792331EE62D9500AD7B7D /* AuthTokenBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379792321EE62D9500AD7B7D /* AuthTokenBehavior.swift */; };
+		379792411EE6396900AD7B7D /* CredentialManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379792401EE6396900AD7B7D /* CredentialManager.swift */; };
+		37C5A3571F04077A00B69225 /* CredentialManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5A3411F04069900B69225 /* CredentialManagerSpec.swift */; };
+		37C5A3591F0407E900B69225 /* StubStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5A3551F0406B800B69225 /* StubStorage.swift */; };
+		37C5A3AA1F045FAB00B69225 /* LocalStorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5A3A91F045FAB00B69225 /* LocalStorageKeys.swift */; };
+		37C5A3AE1F045FCB00B69225 /* LocalValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5A3AD1F045FCB00B69225 /* LocalValue.swift */; };
+		37C5A3B01F04690E00B69225 /* LocalObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5A3AF1F04690E00B69225 /* LocalObject.swift */; };
+		37C5A3B21F046E9D00B69225 /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5A3B11F046E9D00B69225 /* UserDefaultsStorage.swift */; };
+		37C5A3B51F046FC500B69225 /* UserDefaultsStorageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5A3B31F046F9900B69225 /* UserDefaultsStorageSpec.swift */; };
+		37C7F2021F1956B400C0756A /* VibesErrorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C7F2011F1956B400C0756A /* VibesErrorSpec.swift */; };
+		37EF07D51F1526BC00421D2E /* TrackedEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF07D41F1526BC00421D2E /* TrackedEventType.swift */; };
+		37EF07D71F1529E700421D2E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF07D61F1529E700421D2E /* Event.swift */; };
+		37EF07F61F15317300421D2E /* Dictionary+merged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF07F51F15317300421D2E /* Dictionary+merged.swift */; };
+		37EFD7C91EE854EC00EB01CC /* ResourceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EFD7C81EE854EC00EB01CC /* ResourceResult.swift */; };
+		37F1937B1F27D1730035F1E7 /* VibesURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1937A1F27D1730035F1E7 /* VibesURLProtocol.swift */; };
+		37F1938F1F27D2620035F1E7 /* URLRequest+cURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1938E1F27D2620035F1E7 /* URLRequest+cURL.swift */; };
+		37F193DE1F27ED360035F1E7 /* HTTPURLResponse+cURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F193DD1F27ED360035F1E7 /* HTTPURLResponse+cURL.swift */; };
+		37F193E11F27F21C0035F1E7 /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F193E01F27F21C0035F1E7 /* ConsoleLogger.swift */; };
+		37F193E91F27F6020035F1E7 /* VibesLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F193E81F27F6020035F1E7 /* VibesLogger.swift */; };
+		37F76B1A20C82BF1008DDD9E /* StubVibesAPIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F76B0520C82BE7008DDD9E /* StubVibesAPIDelegate.swift */; };
+		37F76B1B20C82BF9008DDD9E /* StubVibesAPIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F76B0520C82BE7008DDD9E /* StubVibesAPIDelegate.swift */; };
+		398773DD20BF388A00829154 /* AssociatePersonOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398773DC20BF388A00829154 /* AssociatePersonOperation.swift */; };
+		398773DE20BF4B5200829154 /* AssociatePersonOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398773DC20BF388A00829154 /* AssociatePersonOperation.swift */; };
+		442653A92051994400BE1E08 /* VibesAPIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442653A82051994400BE1E08 /* VibesAPIDelegate.swift */; };
+		442653D22051B39600BE1E08 /* VibesAPIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442653A82051994400BE1E08 /* VibesAPIDelegate.swift */; };
+		446B6BEA203E355D002F88AE /* VibesQueueOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B6BE9203E355D002F88AE /* VibesQueueOperation.swift */; };
+		446B6BED203E359B002F88AE /* UpdateDeviceOperationPut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B6BEC203E359B002F88AE /* UpdateDeviceOperationPut.swift */; };
+		446B6BEF203E35CA002F88AE /* EventOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B6BEE203E35CA002F88AE /* EventOperation.swift */; };
+		446B6BF3203E360F002F88AE /* RegisterPushOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B6BF2203E360F002F88AE /* RegisterPushOperation.swift */; };
+		446B6BF5203E3632002F88AE /* UnregisterPushOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B6BF4203E3632002F88AE /* UnregisterPushOperation.swift */; };
+		446B6BF7203E3653002F88AE /* RegisterDeviceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B6BF6203E3653002F88AE /* RegisterDeviceOperation.swift */; };
+		446B6BF9203E3673002F88AE /* UnregisterDeviceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B6BF8203E3673002F88AE /* UnregisterDeviceOperation.swift */; };
+		446B6BFB203E36A0002F88AE /* BaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B6BFA203E36A0002F88AE /* BaseOperation.swift */; };
+		446CFD5F20448CE1004889E5 /* BaseOperationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446CFD5E20448CE1004889E5 /* BaseOperationSpec.swift */; };
+		44B4B77A203E9396009D705A /* LocalStorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0214AD031EE1E2F500AB1D41 /* LocalStorageType.swift */; };
+		44B4B77C203E93B4009D705A /* LocalStorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5A3A91F045FAB00B69225 /* LocalStorageKeys.swift */; };
+		44B4B77F203E93D7009D705A /* LocalValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5A3AD1F045FCB00B69225 /* LocalValue.swift */; };
+		44B4B780203E93E4009D705A /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375DD4FA1EE08B5600696B24 /* JSONParser.swift */; };
+		44B4B781203E9428009D705A /* LocalObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5A3AF1F04690E00B69225 /* LocalObject.swift */; };
+		44B4B782203E955E009D705A /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C88C801EE0561E001626AD /* Credential.swift */; };
+		44B4B783203E957A009D705A /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5A3B11F046E9D00B69225 /* UserDefaultsStorage.swift */; };
+		44B4B784203E975E009D705A /* CredentialManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379792401EE6396900AD7B7D /* CredentialManager.swift */; };
+		44B4B785203E977E009D705A /* StubStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5A3551F0406B800B69225 /* StubStorage.swift */; };
+		44B4B786203E97B8009D705A /* EventCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376480571F16C25400DD63C1 /* EventCollection.swift */; };
+		44B4B787203E97C1009D705A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF07D61F1529E700421D2E /* Event.swift */; };
+		44B4B788203E97CA009D705A /* TrackedEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF07D41F1526BC00421D2E /* TrackedEventType.swift */; };
+		44B4B789203E9815009D705A /* Vibes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C88C651EE05450001626AD /* Vibes.swift */; };
+		44B4B78A203E9824009D705A /* PersistentEventStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376480591F16C26F00DD63C1 /* PersistentEventStorage.swift */; };
+		44B4B78B203E982D009D705A /* VibesResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F1F651EE73A3D000706DB /* VibesResult.swift */; };
+		44B4B78D203E983F009D705A /* Dictionary+merged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF07F51F15317300421D2E /* Dictionary+merged.swift */; };
+		44B4B78E203E9842009D705A /* Date+iso8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37647FD11F153E2B00DD63C1 /* Date+iso8601.swift */; };
+		44B4B78F203E9844009D705A /* URLRequest+cURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1938E1F27D2620035F1E7 /* URLRequest+cURL.swift */; };
+		44B4B790203E9847009D705A /* HTTPURLResponse+cURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F193DD1F27ED360035F1E7 /* HTTPURLResponse+cURL.swift */; };
+		44B4B791203E984A009D705A /* InputStream+readToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025553191F43415800DBFD36 /* InputStream+readToString.swift */; };
+		44B4B792203E984D009D705A /* AuthTokenBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379792321EE62D9500AD7B7D /* AuthTokenBehavior.swift */; };
+		44B4B793203E9850009D705A /* VibesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B504D1EE2E561004197D1 /* VibesAPI.swift */; };
+		44B4B794203E9854009D705A /* AppObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373B024C1F147100007C5B2A /* AppObserver.swift */; };
+		44B4B795203E9858009D705A /* EventTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376480431F16B4F500DD63C1 /* EventTracker.swift */; };
+		44B4B796203E986C009D705A /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B11171EFAA70000C79B83 /* KeychainStorage.swift */; };
+		44B4B797203E9878009D705A /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375DD4F51EE07E0000696B24 /* DeviceType.swift */; };
+		44B4B798203E987F009D705A /* DeviceToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373C79861EF40B2600470E8B /* DeviceToken.swift */; };
+		44B4B799203E989D009D705A /* ResourceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EFD7C81EE854EC00EB01CC /* ResourceResult.swift */; };
+		44B4B79A203E98EC009D705A /* HTTPResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375DD4E91EE06EE700696B24 /* HTTPResource.swift */; };
+		44B4B79B203E98F4009D705A /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375DD5031EE1CC9400696B24 /* HTTPMethod.swift */; };
+		44B4B79C203E9910009D705A /* HTTPResourceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C88C661EE05450001626AD /* HTTPResourceClient.swift */; };
+		44B4B79D203E9919009D705A /* HTTPBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3721D5D11EE59B7600673B60 /* HTTPBehavior.swift */; };
+		44B4B79E203E9972009D705A /* VibesLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F193E81F27F6020035F1E7 /* VibesLogger.swift */; };
+		44B4B79F203E998D009D705A /* StubHTTPResourceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B50311EE2E174004197D1 /* StubHTTPResourceClient.swift */; };
+		44B4B7A0203E99CB009D705A /* StubVibesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B50611EE2E845004197D1 /* StubVibesAPI.swift */; };
+		44B4B7A1203E99EA009D705A /* StubURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B50921EE2F3B9004197D1 /* StubURLSession.swift */; };
+		44B4B7A2203E9A0A009D705A /* EventOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B6BEE203E35CA002F88AE /* EventOperation.swift */; };
+		44B4B7A3203E9A12009D705A /* BaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B6BFA203E36A0002F88AE /* BaseOperation.swift */; };
+		44B4B7A4203E9A2B009D705A /* VibesQueueOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B6BE9203E355D002F88AE /* VibesQueueOperation.swift */; };
+		44B4B7A5203E9A4C009D705A /* APIDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375DD4EB1EE0717C00696B24 /* APIDefinition.swift */; };
+		44B4B7A6203E9A5B009D705A /* UnregisterDeviceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B6BF8203E3673002F88AE /* UnregisterDeviceOperation.swift */; };
+		44B4B7A7203E9A62009D705A /* RegisterPushOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B6BF2203E360F002F88AE /* RegisterPushOperation.swift */; };
+		44B4B7A8203E9A67009D705A /* UnregisterPushOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B6BF4203E3632002F88AE /* UnregisterPushOperation.swift */; };
+		44B4B7AA203E9A7B009D705A /* UpdateDeviceOperationPut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B6BEC203E359B002F88AE /* UpdateDeviceOperationPut.swift */; };
+		44B4B7AB203E9A83009D705A /* RegisterDeviceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B6BF6203E3653002F88AE /* RegisterDeviceOperation.swift */; };
+		44B4B7AC203E9ABA009D705A /* VibesURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1937A1F27D1730035F1E7 /* VibesURLProtocol.swift */; };
+		44B4B7AD203E9AD1009D705A /* StubDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3721D5B71EE5930A00673B60 /* StubDevice.swift */; };
+		44B4B7AE203E9ADF009D705A /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F193E01F27F21C0035F1E7 /* ConsoleLogger.swift */; };
+		B321D233255BCF3F00E86DB6 /* VibesAppInfoSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B321D232255BCF3F00E86DB6 /* VibesAppInfoSpec.swift */; };
+		B343B0502119FF920096777C /* VibesConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B343B04F2119FF920096777C /* VibesConfiguration.swift */; };
+		B343B0512119FF920096777C /* VibesConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B343B04F2119FF920096777C /* VibesConfiguration.swift */; };
+		B3A5D93F267BA2A000AAF8E8 /* UpdateDeviceOperationPatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A5D93E267BA29F00AAF8E8 /* UpdateDeviceOperationPatch.swift */; };
+		B3A5D940267BA2A000AAF8E8 /* UpdateDeviceOperationPatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A5D93E267BA29F00AAF8E8 /* UpdateDeviceOperationPatch.swift */; };
+		B3A8101F25595FE80087E780 /* GetVibesAppInfoOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A8101E25595FE80087E780 /* GetVibesAppInfoOperation.swift */; };
+		B3A8102025595FE80087E780 /* GetVibesAppInfoOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A8101E25595FE80087E780 /* GetVibesAppInfoOperation.swift */; };
+		B3A8103D255AC47B0087E780 /* VibesAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A8103C255AC47B0087E780 /* VibesAppInfo.swift */; };
+		B3A8103E255AC47B0087E780 /* VibesAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A8103C255AC47B0087E780 /* VibesAppInfo.swift */; };
+		B3B699B52121FC74001C4DA6 /* StubVibesWithMockStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B699B42121FC74001C4DA6 /* StubVibesWithMockStorage.swift */; };
+		B3B699B62121FC74001C4DA6 /* StubVibesWithMockStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B699B42121FC74001C4DA6 /* StubVibesWithMockStorage.swift */; };
+		B3DB6ED1260A5786002E50AC /* MigrationCallbackOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DB6EBE260A5786002E50AC /* MigrationCallbackOperation.swift */; };
+		B3DB6ED2260A5786002E50AC /* MigrationCallbackOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DB6EBE260A5786002E50AC /* MigrationCallbackOperation.swift */; };
+		D14214BD26C2C45D00969BB6 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14214BC26C2C45D00969BB6 /* FoundationExtensions.swift */; };
+		D14214BE26C2C45D00969BB6 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14214BC26C2C45D00969BB6 /* FoundationExtensions.swift */; };
+		D14C1B0824F59F84001BDC03 /* CombinedLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E6A6EC24EE789A00CBC405 /* CombinedLogger.swift */; };
+		D14C1B1D24F5ABC5001BDC03 /* Date+logPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C1B1C24F5ABC5001BDC03 /* Date+logPrefix.swift */; };
+		D14C1B1E24F5ABC5001BDC03 /* Date+logPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14C1B1C24F5ABC5001BDC03 /* Date+logPrefix.swift */; };
+		D184587B25629CBE009DBA2E /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = D184586525629CBE009DBA2E /* Cartfile.resolved */; };
+		D1B488AF2510E9D1001D3DD0 /* GitTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B488AE2510E9D1001D3DD0 /* GitTag.swift */; };
+		D1B488B02510E9D1001D3DD0 /* GitTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B488AE2510E9D1001D3DD0 /* GitTag.swift */; };
+		D1B488C52510EC06001D3DD0 /* GitTagSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B488C32510EC06001D3DD0 /* GitTagSpec.swift */; };
+		D1B488C72510F781001D3DD0 /* GetGitTagsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B488C62510F781001D3DD0 /* GetGitTagsOperation.swift */; };
+		D1B488C82510F781001D3DD0 /* GetGitTagsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B488C62510F781001D3DD0 /* GetGitTagsOperation.swift */; };
+		D1E6A6ED24EE789A00CBC405 /* CombinedLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E6A6EC24EE789A00CBC405 /* CombinedLogger.swift */; };
+		EB3679DD22EAE1EB00E20BBE /* UpdateMessageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3679DC22EAE1EB00E20BBE /* UpdateMessageOperation.swift */; };
+		EB3679DE22EAE1EB00E20BBE /* UpdateMessageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3679DC22EAE1EB00E20BBE /* UpdateMessageOperation.swift */; };
+		EBF5D85E22D723FB0042DD2F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF5D85D22D723FB0042DD2F /* Person.swift */; };
+		EBF5D85F22D723FB0042DD2F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF5D85D22D723FB0042DD2F /* Person.swift */; };
+		EBF5D87322D727A10042DD2F /* GetPersonOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF5D87222D727A10042DD2F /* GetPersonOperation.swift */; };
+		EBF5D87422D727A10042DD2F /* GetPersonOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF5D87222D727A10042DD2F /* GetPersonOperation.swift */; };
+		EBF5D88122D739B40042DD2F /* PersonSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF5D87F22D739B40042DD2F /* PersonSpec.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3549BB671DA38ADB00C63030 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3549BAFC1DA387DB00C63030 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3549BB201DA389CD00C63030;
+			remoteInfo = "VibesPush-iOS";
+		};
+		35CA2A921E12920400147290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CA2A891E12920400147290 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F925EAD195C0D6300ED456B;
+			remoteInfo = "Nimble-macOS";
+		};
+		35CA2A941E12920400147290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CA2A891E12920400147290 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F925EB7195C0D6300ED456B;
+			remoteInfo = "Nimble-macOSTests";
+		};
+		35CA2A961E12920400147290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CA2A891E12920400147290 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1A74291940169200FFFC47;
+			remoteInfo = "Nimble-iOS";
+		};
+		35CA2A981E12920400147290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CA2A891E12920400147290 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1A74341940169200FFFC47;
+			remoteInfo = "Nimble-iOSTests";
+		};
+		35CA2A9A1E12920400147290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CA2A891E12920400147290 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F5DF1551BDCA0CE00C3A531;
+			remoteInfo = "Nimble-tvOS";
+		};
+		35CA2A9C1E12920400147290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CA2A891E12920400147290 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F5DF15E1BDCA0CE00C3A531;
+			remoteInfo = "Nimble-tvOSTests";
+		};
+		35CA2AAA1E12920400147290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CA2A861E12920400147290 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAEB6B8E1943873100289F44;
+			remoteInfo = "Quick-macOS";
+		};
+		35CA2AAC1E12920400147290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CA2A861E12920400147290 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAEB6B991943873100289F44;
+			remoteInfo = "Quick-macOSTests";
+		};
+		35CA2AAE1E12920400147290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CA2A861E12920400147290 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA5663E81A4C8D8500193C88;
+			remoteInfo = "QuickFocused-macOSTests";
+		};
+		35CA2AB01E12920400147290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CA2A861E12920400147290 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64076CF51D6D7C2000E2B499;
+			remoteInfo = "QuickAfterSuite-macOSTests";
+		};
+		35CA2AB21E12920400147290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CA2A861E12920400147290 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5D117C19473F2100F6D13D;
+			remoteInfo = "Quick-iOS";
+		};
+		35CA2AB41E12920400147290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CA2A861E12920400147290 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5D118619473F2100F6D13D;
+			remoteInfo = "Quick-iOSTests";
+		};
+		35CA2AB61E12920400147290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CA2A861E12920400147290 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA9876B21A4C70EB0004AA17;
+			remoteInfo = "QuickFocused-iOSTests";
+		};
+		35CA2AB81E12920400147290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CA2A861E12920400147290 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64076D081D6D7CD600E2B499;
+			remoteInfo = "QuickAfterSuite-iOSTests";
+		};
+		35CA2ABA1E12920400147290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CA2A861E12920400147290 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F118CD51BDCA4AB005013A2;
+			remoteInfo = "Quick-tvOS";
+		};
+		35CA2ABC1E12920400147290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CA2A861E12920400147290 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F118CDE1BDCA4AB005013A2;
+			remoteInfo = "Quick-tvOSTests";
+		};
+		35CA2ABE1E12920400147290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CA2A861E12920400147290 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F118CF01BDCA4BB005013A2;
+			remoteInfo = "QuickFocused-tvOSTests";
+		};
+		35CA2AC01E12920400147290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CA2A861E12920400147290 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64076D1A1D6D7CEA00E2B499;
+			remoteInfo = "QuickAfterSuite-tvOSTests";
+		};
+		35CA2AC21E12922F00147290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CA2A861E12920400147290 /* Quick.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A5D117B19473F2100F6D13D;
+			remoteInfo = "Quick-iOS";
+		};
+		35CA2AC41E12922F00147290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CA2A891E12920400147290 /* Nimble.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F1A74281940169200FFFC47;
+			remoteInfo = "Nimble-iOS";
+		};
+		3721D5D81EE59E6600673B60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CA2A861E12920400147290 /* Quick.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A5D117B19473F2100F6D13D;
+			remoteInfo = "Quick-iOS";
+		};
+		3721D5DA1EE59E6600673B60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35CA2A891E12920400147290 /* Nimble.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F1A74281940169200FFFC47;
+			remoteInfo = "Nimble-iOS";
+		};
+		3721D5DC1EE59E6600673B60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3549BAFC1DA387DB00C63030 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3549BB201DA389CD00C63030;
+			remoteInfo = "VibesPush-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0214AD031EE1E2F500AB1D41 /* LocalStorageType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageType.swift; sourceTree = "<group>"; };
+		023B11171EFAA70000C79B83 /* KeychainStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
+		025553191F43415800DBFD36 /* InputStream+readToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InputStream+readToString.swift"; sourceTree = "<group>"; };
+		02C88C651EE05450001626AD /* Vibes.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = Vibes.swift; sourceTree = "<group>"; tabWidth = 2; };
+		02C88C661EE05450001626AD /* HTTPResourceClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResourceClient.swift; sourceTree = "<group>"; };
+		02C88C801EE0561E001626AD /* Credential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		02C88C821EE059D4001626AD /* HTTPResourceClientSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResourceClientSpec.swift; sourceTree = "<group>"; };
+		02FE31F61EDDB708005E9E0C /* VibesPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VibesPush.h; sourceTree = "<group>"; };
+		267D2C37090D15A41E2A8EE8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F01A58F22DDE55E00D86D37 /* GetInboxMessagesOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInboxMessagesOperation.swift; sourceTree = "<group>"; };
+		2F260FDC235FA9CD00CC403D /* GetInboxMessageOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInboxMessageOperation.swift; sourceTree = "<group>"; };
+		2FAC03B622CA133E008C2D98 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2FC1C7B022DDB54B00942AFD /* InboxMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxMessage.swift; sourceTree = "<group>"; };
+		2FC1C7C522DDBEC400942AFD /* InboxMessageSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxMessageSpec.swift; sourceTree = "<group>"; };
+		3549BB211DA389CD00C63030 /* VibesPush.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VibesPush.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3549BB611DA38ADB00C63030 /* VibesPushTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VibesPushTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35CA2A861E12920400147290 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Carthage/Checkouts/Quick/Quick.xcodeproj; sourceTree = "<group>"; };
+		35CA2A891E12920400147290 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Carthage/Checkouts/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
+		3721D5B71EE5930A00673B60 /* StubDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubDevice.swift; sourceTree = "<group>"; };
+		3721D5D11EE59B7600673B60 /* HTTPBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPBehavior.swift; sourceTree = "<group>"; };
+		3721D5D31EE59D9900673B60 /* AuthTokenBehaviorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthTokenBehaviorSpec.swift; sourceTree = "<group>"; };
+		3721D5EE1EE59E6600673B60 /* VibesPushIntegrationTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VibesPushIntegrationTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3721D5F31EE59FD000673B60 /* VibesAPISpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VibesAPISpec.swift; sourceTree = "<group>"; };
+		373B024C1F147100007C5B2A /* AppObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppObserver.swift; sourceTree = "<group>"; };
+		373C79861EF40B2600470E8B /* DeviceToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceToken.swift; sourceTree = "<group>"; };
+		373C799A1EF40CA600470E8B /* DeviceTokenSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTokenSpec.swift; sourceTree = "<group>"; };
+		373C799D1EF40DCE00470E8B /* APIDefinitionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDefinitionSpec.swift; sourceTree = "<group>"; };
+		374B50311EE2E174004197D1 /* StubHTTPResourceClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubHTTPResourceClient.swift; sourceTree = "<group>"; };
+		374B504D1EE2E561004197D1 /* VibesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = VibesAPI.swift; sourceTree = "<group>"; tabWidth = 2; };
+		374B50611EE2E845004197D1 /* StubVibesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = StubVibesAPI.swift; sourceTree = "<group>"; tabWidth = 2; };
+		374B50921EE2F3B9004197D1 /* StubURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubURLSession.swift; sourceTree = "<group>"; };
+		374B50941EE4C198004197D1 /* CredentialSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialSpec.swift; sourceTree = "<group>"; };
+		374B50961EE4C469004197D1 /* ResourceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceSpec.swift; sourceTree = "<group>"; };
+		375DD4E91EE06EE700696B24 /* HTTPResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResource.swift; sourceTree = "<group>"; };
+		375DD4EB1EE0717C00696B24 /* APIDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = APIDefinition.swift; sourceTree = "<group>"; tabWidth = 2; };
+		375DD4ED1EE0754E00696B24 /* VibesSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VibesSpec.swift; sourceTree = "<group>"; };
+		375DD4F51EE07E0000696B24 /* DeviceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
+		375DD4F71EE07E4800696B24 /* DeviceTypeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTypeSpec.swift; sourceTree = "<group>"; };
+		375DD4FA1EE08B5600696B24 /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; tabWidth = 2; };
+		375DD4FC1EE08BA900696B24 /* JSONParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParserSpec.swift; sourceTree = "<group>"; };
+		375DD5031EE1CC9400696B24 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		37647FD11F153E2B00DD63C1 /* Date+iso8601.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+iso8601.swift"; sourceTree = "<group>"; };
+		37647FD31F153E9000DD63C1 /* EventSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventSpec.swift; sourceTree = "<group>"; };
+		3764803A1F16826300DD63C1 /* StubEventTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubEventTracker.swift; sourceTree = "<group>"; };
+		376480431F16B4F500DD63C1 /* EventTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTracker.swift; sourceTree = "<group>"; };
+		376480571F16C25400DD63C1 /* EventCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCollection.swift; sourceTree = "<group>"; };
+		376480591F16C26F00DD63C1 /* PersistentEventStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentEventStorage.swift; sourceTree = "<group>"; };
+		3764805E1F16C36400DD63C1 /* PersistentEventStorageSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentEventStorageSpec.swift; sourceTree = "<group>"; };
+		377F1F651EE73A3D000706DB /* VibesResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VibesResult.swift; sourceTree = "<group>"; };
+		379792321EE62D9500AD7B7D /* AuthTokenBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthTokenBehavior.swift; sourceTree = "<group>"; };
+		379792401EE6396900AD7B7D /* CredentialManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialManager.swift; sourceTree = "<group>"; };
+		37C5A3411F04069900B69225 /* CredentialManagerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialManagerSpec.swift; sourceTree = "<group>"; };
+		37C5A3551F0406B800B69225 /* StubStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubStorage.swift; sourceTree = "<group>"; };
+		37C5A3A91F045FAB00B69225 /* LocalStorageKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageKeys.swift; sourceTree = "<group>"; };
+		37C5A3AD1F045FCB00B69225 /* LocalValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalValue.swift; sourceTree = "<group>"; };
+		37C5A3AF1F04690E00B69225 /* LocalObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalObject.swift; sourceTree = "<group>"; };
+		37C5A3B11F046E9D00B69225 /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
+		37C5A3B31F046F9900B69225 /* UserDefaultsStorageSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorageSpec.swift; sourceTree = "<group>"; };
+		37C7F2011F1956B400C0756A /* VibesErrorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VibesErrorSpec.swift; sourceTree = "<group>"; };
+		37EF07D41F1526BC00421D2E /* TrackedEventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackedEventType.swift; sourceTree = "<group>"; };
+		37EF07D61F1529E700421D2E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		37EF07F51F15317300421D2E /* Dictionary+merged.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+merged.swift"; sourceTree = "<group>"; };
+		37EFD7C81EE854EC00EB01CC /* ResourceResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceResult.swift; sourceTree = "<group>"; };
+		37F1937A1F27D1730035F1E7 /* VibesURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VibesURLProtocol.swift; sourceTree = "<group>"; };
+		37F1938E1F27D2620035F1E7 /* URLRequest+cURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+cURL.swift"; sourceTree = "<group>"; };
+		37F193DD1F27ED360035F1E7 /* HTTPURLResponse+cURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+cURL.swift"; sourceTree = "<group>"; };
+		37F193E01F27F21C0035F1E7 /* ConsoleLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleLogger.swift; sourceTree = "<group>"; };
+		37F193E81F27F6020035F1E7 /* VibesLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VibesLogger.swift; sourceTree = "<group>"; };
+		37F76B0520C82BE7008DDD9E /* StubVibesAPIDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubVibesAPIDelegate.swift; sourceTree = "<group>"; };
+		398773DC20BF388A00829154 /* AssociatePersonOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatePersonOperation.swift; sourceTree = "<group>"; };
+		442653A82051994400BE1E08 /* VibesAPIDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibesAPIDelegate.swift; sourceTree = "<group>"; };
+		446B6BE9203E355D002F88AE /* VibesQueueOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibesQueueOperation.swift; sourceTree = "<group>"; };
+		446B6BEC203E359B002F88AE /* UpdateDeviceOperationPut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDeviceOperationPut.swift; sourceTree = "<group>"; };
+		446B6BEE203E35CA002F88AE /* EventOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventOperation.swift; sourceTree = "<group>"; };
+		446B6BF2203E360F002F88AE /* RegisterPushOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPushOperation.swift; sourceTree = "<group>"; };
+		446B6BF4203E3632002F88AE /* UnregisterPushOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnregisterPushOperation.swift; sourceTree = "<group>"; };
+		446B6BF6203E3653002F88AE /* RegisterDeviceOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDeviceOperation.swift; sourceTree = "<group>"; };
+		446B6BF8203E3673002F88AE /* UnregisterDeviceOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnregisterDeviceOperation.swift; sourceTree = "<group>"; };
+		446B6BFA203E36A0002F88AE /* BaseOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseOperation.swift; sourceTree = "<group>"; };
+		446CFD5E20448CE1004889E5 /* BaseOperationSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseOperationSpec.swift; sourceTree = "<group>"; };
+		44F5DEE81FDEF386006CF5E9 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		73BB0828CCFBFDF13836A0E6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B321D232255BCF3F00E86DB6 /* VibesAppInfoSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibesAppInfoSpec.swift; sourceTree = "<group>"; };
+		B343B04F2119FF920096777C /* VibesConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibesConfiguration.swift; sourceTree = "<group>"; };
+		B3A5D93E267BA29F00AAF8E8 /* UpdateDeviceOperationPatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDeviceOperationPatch.swift; sourceTree = "<group>"; };
+		B3A8101E25595FE80087E780 /* GetVibesAppInfoOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVibesAppInfoOperation.swift; sourceTree = "<group>"; };
+		B3A8103C255AC47B0087E780 /* VibesAppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibesAppInfo.swift; sourceTree = "<group>"; };
+		B3B699B42121FC74001C4DA6 /* StubVibesWithMockStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubVibesWithMockStorage.swift; sourceTree = "<group>"; };
+		B3DB6EBE260A5786002E50AC /* MigrationCallbackOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MigrationCallbackOperation.swift; sourceTree = "<group>"; };
+		D14214BC26C2C45D00969BB6 /* FoundationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
+		D14C1B1C24F5ABC5001BDC03 /* Date+logPrefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+logPrefix.swift"; sourceTree = "<group>"; };
+		D184586525629CBE009DBA2E /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
+		D1B488AE2510E9D1001D3DD0 /* GitTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitTag.swift; sourceTree = "<group>"; };
+		D1B488C32510EC06001D3DD0 /* GitTagSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitTagSpec.swift; sourceTree = "<group>"; };
+		D1B488C62510F781001D3DD0 /* GetGitTagsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGitTagsOperation.swift; sourceTree = "<group>"; };
+		D1E6A6EC24EE789A00CBC405 /* CombinedLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedLogger.swift; sourceTree = "<group>"; };
+		EB3679DC22EAE1EB00E20BBE /* UpdateMessageOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateMessageOperation.swift; sourceTree = "<group>"; };
+		EBF5D85D22D723FB0042DD2F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		EBF5D87222D727A10042DD2F /* GetPersonOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPersonOperation.swift; sourceTree = "<group>"; };
+		EBF5D87F22D739B40042DD2F /* PersonSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSpec.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3549BB1D1DA389CD00C63030 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3549BB5E1DA38ADB00C63030 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35CA2AC61E12925700147290 /* Nimble.framework in Frameworks */,
+				35CA2AC71E12925700147290 /* Quick.framework in Frameworks */,
+				3549BB661DA38ADB00C63030 /* VibesPush.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3721D5E61EE59E6600673B60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3721D5E71EE59E6600673B60 /* Nimble.framework in Frameworks */,
+				3721D5E81EE59E6600673B60 /* Quick.framework in Frameworks */,
+				3721D5E91EE59E6600673B60 /* VibesPush.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3549BAFB1DA387DB00C63030 = {
+			isa = PBXGroup;
+			children = (
+				D184586525629CBE009DBA2E /* Cartfile.resolved */,
+				357D954B1DA3F2B400AEC55F /* Frameworks */,
+				3721D5F01EE59E9200673B60 /* IntegrationTests */,
+				3549BB061DA387DB00C63030 /* Products */,
+				3549BB161DA3890B00C63030 /* Sources */,
+				3549BB191DA3890B00C63030 /* Tests */,
+				02FE31F61EDDB708005E9E0C /* VibesPush.h */,
+			);
+			sourceTree = "<group>";
+		};
+		3549BB061DA387DB00C63030 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3549BB211DA389CD00C63030 /* VibesPush.framework */,
+				3549BB611DA38ADB00C63030 /* VibesPushTests-iOS.xctest */,
+				3721D5EE1EE59E6600673B60 /* VibesPushIntegrationTests-iOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3549BB161DA3890B00C63030 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				37EF07F41F15316500421D2E /* Extensions */,
+				379792311EE62D7F00AD7B7D /* API */,
+				37EF07C11F1526A800421D2E /* Events */,
+				374B50381EE2E336004197D1 /* HTTP */,
+				37F193DF1F27F2070035F1E7 /* Logging */,
+				37C5A3961F045F8E00B69225 /* Storage */,
+				02C88C801EE0561E001626AD /* Credential.swift */,
+				379792401EE6396900AD7B7D /* CredentialManager.swift */,
+				375DD4F51EE07E0000696B24 /* DeviceType.swift */,
+				373C79861EF40B2600470E8B /* DeviceToken.swift */,
+				D1B488AE2510E9D1001D3DD0 /* GitTag.swift */,
+				267D2C37090D15A41E2A8EE8 /* Info.plist */,
+				2FC1C7B022DDB54B00942AFD /* InboxMessage.swift */,
+				B3A8103C255AC47B0087E780 /* VibesAppInfo.swift */,
+				02C88C651EE05450001626AD /* Vibes.swift */,
+				377F1F651EE73A3D000706DB /* VibesResult.swift */,
+				442653A82051994400BE1E08 /* VibesAPIDelegate.swift */,
+				B343B04F2119FF920096777C /* VibesConfiguration.swift */,
+				EBF5D85D22D723FB0042DD2F /* Person.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3549BB191DA3890B00C63030 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				375DD4EF1EE0757C00696B24 /* Stubs */,
+				373C799D1EF40DCE00470E8B /* APIDefinitionSpec.swift */,
+				3721D5D31EE59D9900673B60 /* AuthTokenBehaviorSpec.swift */,
+				446CFD5E20448CE1004889E5 /* BaseOperationSpec.swift */,
+				374B50941EE4C198004197D1 /* CredentialSpec.swift */,
+				37C5A3411F04069900B69225 /* CredentialManagerSpec.swift */,
+				375DD4F71EE07E4800696B24 /* DeviceTypeSpec.swift */,
+				373C799A1EF40CA600470E8B /* DeviceTokenSpec.swift */,
+				37647FD31F153E9000DD63C1 /* EventSpec.swift */,
+				2FAC03B622CA133E008C2D98 /* Extensions.swift */,
+				D1B488C32510EC06001D3DD0 /* GitTagSpec.swift */,
+				02C88C821EE059D4001626AD /* HTTPResourceClientSpec.swift */,
+				73BB0828CCFBFDF13836A0E6 /* Info.plist */,
+				2FC1C7C522DDBEC400942AFD /* InboxMessageSpec.swift */,
+				B321D232255BCF3F00E86DB6 /* VibesAppInfoSpec.swift */,
+				375DD4FC1EE08BA900696B24 /* JSONParserSpec.swift */,
+				3764805E1F16C36400DD63C1 /* PersistentEventStorageSpec.swift */,
+				EBF5D87F22D739B40042DD2F /* PersonSpec.swift */,
+				374B50961EE4C469004197D1 /* ResourceSpec.swift */,
+				37C5A3B31F046F9900B69225 /* UserDefaultsStorageSpec.swift */,
+				3721D5F31EE59FD000673B60 /* VibesAPISpec.swift */,
+				375DD4ED1EE0754E00696B24 /* VibesSpec.swift */,
+				37C7F2011F1956B400C0756A /* VibesErrorSpec.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		357D954B1DA3F2B400AEC55F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44F5DEE81FDEF386006CF5E9 /* PassKit.framework */,
+				35CA2A861E12920400147290 /* Quick.xcodeproj */,
+				35CA2A891E12920400147290 /* Nimble.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35CA2A871E12920400147290 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35CA2AAB1E12920400147290 /* Quick.framework */,
+				35CA2AAD1E12920400147290 /* Quick - macOSTests.xctest */,
+				35CA2AAF1E12920400147290 /* QuickFocused - macOSTests.xctest */,
+				35CA2AB11E12920400147290 /* QuickAfterSuite - macOSTests.xctest */,
+				35CA2AB31E12920400147290 /* Quick.framework */,
+				35CA2AB51E12920400147290 /* Quick - iOSTests.xctest */,
+				35CA2AB71E12920400147290 /* QuickFocused - iOSTests.xctest */,
+				35CA2AB91E12920400147290 /* QuickAfterSuite - iOSTests.xctest */,
+				35CA2ABB1E12920400147290 /* Quick.framework */,
+				35CA2ABD1E12920400147290 /* Quick - tvOSTests.xctest */,
+				35CA2ABF1E12920400147290 /* QuickFocused - tvOSTests.xctest */,
+				35CA2AC11E12920400147290 /* QuickAfterSuite - tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35CA2A8A1E12920400147290 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35CA2A931E12920400147290 /* Nimble.framework */,
+				35CA2A951E12920400147290 /* NimbleTests.xctest */,
+				35CA2A971E12920400147290 /* Nimble.framework */,
+				35CA2A991E12920400147290 /* NimbleTests.xctest */,
+				35CA2A9B1E12920400147290 /* Nimble.framework */,
+				35CA2A9D1E12920400147290 /* NimbleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3721D5F01EE59E9200673B60 /* IntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IntegrationTests;
+			sourceTree = "<group>";
+		};
+		374B50381EE2E336004197D1 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				446B6BEB203E3589002F88AE /* Operations */,
+				3721D5D11EE59B7600673B60 /* HTTPBehavior.swift */,
+				375DD5031EE1CC9400696B24 /* HTTPMethod.swift */,
+				02C88C661EE05450001626AD /* HTTPResourceClient.swift */,
+				375DD4FA1EE08B5600696B24 /* JSONParser.swift */,
+				375DD4E91EE06EE700696B24 /* HTTPResource.swift */,
+				37EFD7C81EE854EC00EB01CC /* ResourceResult.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		375DD4EF1EE0757C00696B24 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				3721D5B71EE5930A00673B60 /* StubDevice.swift */,
+				374B50311EE2E174004197D1 /* StubHTTPResourceClient.swift */,
+				374B50921EE2F3B9004197D1 /* StubURLSession.swift */,
+				374B50611EE2E845004197D1 /* StubVibesAPI.swift */,
+				37C5A3551F0406B800B69225 /* StubStorage.swift */,
+				3764803A1F16826300DD63C1 /* StubEventTracker.swift */,
+				37F76B0520C82BE7008DDD9E /* StubVibesAPIDelegate.swift */,
+				B3B699B42121FC74001C4DA6 /* StubVibesWithMockStorage.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		379792311EE62D7F00AD7B7D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				379792321EE62D9500AD7B7D /* AuthTokenBehavior.swift */,
+				375DD4EB1EE0717C00696B24 /* APIDefinition.swift */,
+				374B504D1EE2E561004197D1 /* VibesAPI.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		37C5A3961F045F8E00B69225 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				023B11171EFAA70000C79B83 /* KeychainStorage.swift */,
+				37C5A3AF1F04690E00B69225 /* LocalObject.swift */,
+				37C5A3AD1F045FCB00B69225 /* LocalValue.swift */,
+				37C5A3A91F045FAB00B69225 /* LocalStorageKeys.swift */,
+				0214AD031EE1E2F500AB1D41 /* LocalStorageType.swift */,
+				37C5A3B11F046E9D00B69225 /* UserDefaultsStorage.swift */,
+			);
+			name = Storage;
+			sourceTree = "<group>";
+		};
+		37EF07C11F1526A800421D2E /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				373B024C1F147100007C5B2A /* AppObserver.swift */,
+				37EF07D61F1529E700421D2E /* Event.swift */,
+				376480431F16B4F500DD63C1 /* EventTracker.swift */,
+				376480571F16C25400DD63C1 /* EventCollection.swift */,
+				376480591F16C26F00DD63C1 /* PersistentEventStorage.swift */,
+				37EF07D41F1526BC00421D2E /* TrackedEventType.swift */,
+			);
+			name = Events;
+			sourceTree = "<group>";
+		};
+		37EF07F41F15316500421D2E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				37EF07F51F15317300421D2E /* Dictionary+merged.swift */,
+				37647FD11F153E2B00DD63C1 /* Date+iso8601.swift */,
+				37F1938E1F27D2620035F1E7 /* URLRequest+cURL.swift */,
+				37F193DD1F27ED360035F1E7 /* HTTPURLResponse+cURL.swift */,
+				025553191F43415800DBFD36 /* InputStream+readToString.swift */,
+				D14C1B1C24F5ABC5001BDC03 /* Date+logPrefix.swift */,
+				D14214BC26C2C45D00969BB6 /* FoundationExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		37F193DF1F27F2070035F1E7 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				37F1937A1F27D1730035F1E7 /* VibesURLProtocol.swift */,
+				37F193E01F27F21C0035F1E7 /* ConsoleLogger.swift */,
+				37F193E81F27F6020035F1E7 /* VibesLogger.swift */,
+				D1E6A6EC24EE789A00CBC405 /* CombinedLogger.swift */,
+			);
+			name = Logging;
+			sourceTree = "<group>";
+		};
+		446B6BEB203E3589002F88AE /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				398773DC20BF388A00829154 /* AssociatePersonOperation.swift */,
+				446B6BFA203E36A0002F88AE /* BaseOperation.swift */,
+				446B6BEE203E35CA002F88AE /* EventOperation.swift */,
+				2F01A58F22DDE55E00D86D37 /* GetInboxMessagesOperation.swift */,
+				EBF5D87222D727A10042DD2F /* GetPersonOperation.swift */,
+				2F260FDC235FA9CD00CC403D /* GetInboxMessageOperation.swift */,
+				D1B488C62510F781001D3DD0 /* GetGitTagsOperation.swift */,
+				B3A8101E25595FE80087E780 /* GetVibesAppInfoOperation.swift */,
+				B3DB6EBE260A5786002E50AC /* MigrationCallbackOperation.swift */,
+				446B6BF6203E3653002F88AE /* RegisterDeviceOperation.swift */,
+				446B6BF2203E360F002F88AE /* RegisterPushOperation.swift */,
+				446B6BF4203E3632002F88AE /* UnregisterPushOperation.swift */,
+				446B6BF8203E3673002F88AE /* UnregisterDeviceOperation.swift */,
+				B3A5D93E267BA29F00AAF8E8 /* UpdateDeviceOperationPatch.swift */,
+				446B6BEC203E359B002F88AE /* UpdateDeviceOperationPut.swift */,
+				EB3679DC22EAE1EB00E20BBE /* UpdateMessageOperation.swift */,
+				446B6BE9203E355D002F88AE /* VibesQueueOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3549BB1E1DA389CD00C63030 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02FE31F71EDDB708005E9E0C /* VibesPush.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3549BB201DA389CD00C63030 /* VibesPush-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3549BB261DA389CD00C63030 /* Build configuration list for PBXNativeTarget "VibesPush-iOS" */;
+			buildPhases = (
+				3549BB1C1DA389CD00C63030 /* Sources */,
+				3549BB1D1DA389CD00C63030 /* Frameworks */,
+				3549BB1E1DA389CD00C63030 /* Headers */,
+				3549BB1F1DA389CD00C63030 /* Resources */,
+				D1BA32D52575226600F83FFE /* Swift Lint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VibesPush-iOS";
+			productName = "VibesPush-iOS";
+			productReference = 3549BB211DA389CD00C63030 /* VibesPush.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3549BB601DA38ADB00C63030 /* VibesPushTests-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3549BB691DA38ADB00C63030 /* Build configuration list for PBXNativeTarget "VibesPushTests-iOS" */;
+			buildPhases = (
+				3549BB5D1DA38ADB00C63030 /* Sources */,
+				3549BB5E1DA38ADB00C63030 /* Frameworks */,
+				3549BB5F1DA38ADB00C63030 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35CA2AC31E12922F00147290 /* PBXTargetDependency */,
+				35CA2AC51E12922F00147290 /* PBXTargetDependency */,
+				3549BB681DA38ADB00C63030 /* PBXTargetDependency */,
+			);
+			name = "VibesPushTests-iOS";
+			productName = "VibesPushTests-iOS";
+			productReference = 3549BB611DA38ADB00C63030 /* VibesPushTests-iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3721D5D61EE59E6600673B60 /* VibesPushIntegrationTests-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3721D5EB1EE59E6600673B60 /* Build configuration list for PBXNativeTarget "VibesPushIntegrationTests-iOS" */;
+			buildPhases = (
+				3721D5DD1EE59E6600673B60 /* Sources */,
+				3721D5E61EE59E6600673B60 /* Frameworks */,
+				3721D5EA1EE59E6600673B60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3721D5D71EE59E6600673B60 /* PBXTargetDependency */,
+				3721D5D91EE59E6600673B60 /* PBXTargetDependency */,
+				3721D5DB1EE59E6600673B60 /* PBXTargetDependency */,
+			);
+			name = "VibesPushIntegrationTests-iOS";
+			productName = "VibesPushTests-iOS";
+			productReference = 3721D5EE1EE59E6600673B60 /* VibesPushIntegrationTests-iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3549BAFC1DA387DB00C63030 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Vibes;
+				TargetAttributes = {
+					3549BB201DA389CD00C63030 = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 1130;
+						ProvisioningStyle = Automatic;
+					};
+					3549BB601DA38ADB00C63030 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = N68EHK7Q3H;
+						LastSwiftMigration = 1130;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3549BAFF1DA387DB00C63030 /* Build configuration list for PBXProject "VibesPush" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3549BAFB1DA387DB00C63030;
+			productRefGroup = 3549BB061DA387DB00C63030 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 35CA2A8A1E12920400147290 /* Products */;
+					ProjectRef = 35CA2A891E12920400147290 /* Nimble.xcodeproj */;
+				},
+				{
+					ProductGroup = 35CA2A871E12920400147290 /* Products */;
+					ProjectRef = 35CA2A861E12920400147290 /* Quick.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				3549BB201DA389CD00C63030 /* VibesPush-iOS */,
+				3549BB601DA38ADB00C63030 /* VibesPushTests-iOS */,
+				3721D5D61EE59E6600673B60 /* VibesPushIntegrationTests-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		35CA2A931E12920400147290 /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = 35CA2A921E12920400147290 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35CA2A951E12920400147290 /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = 35CA2A941E12920400147290 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35CA2A971E12920400147290 /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = 35CA2A961E12920400147290 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35CA2A991E12920400147290 /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = 35CA2A981E12920400147290 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35CA2A9B1E12920400147290 /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = 35CA2A9A1E12920400147290 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35CA2A9D1E12920400147290 /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = 35CA2A9C1E12920400147290 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35CA2AAB1E12920400147290 /* Quick.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quick.framework;
+			remoteRef = 35CA2AAA1E12920400147290 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35CA2AAD1E12920400147290 /* Quick - macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Quick - macOSTests.xctest";
+			remoteRef = 35CA2AAC1E12920400147290 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35CA2AAF1E12920400147290 /* QuickFocused - macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickFocused - macOSTests.xctest";
+			remoteRef = 35CA2AAE1E12920400147290 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35CA2AB11E12920400147290 /* QuickAfterSuite - macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickAfterSuite - macOSTests.xctest";
+			remoteRef = 35CA2AB01E12920400147290 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35CA2AB31E12920400147290 /* Quick.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quick.framework;
+			remoteRef = 35CA2AB21E12920400147290 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35CA2AB51E12920400147290 /* Quick - iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Quick - iOSTests.xctest";
+			remoteRef = 35CA2AB41E12920400147290 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35CA2AB71E12920400147290 /* QuickFocused - iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickFocused - iOSTests.xctest";
+			remoteRef = 35CA2AB61E12920400147290 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35CA2AB91E12920400147290 /* QuickAfterSuite - iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickAfterSuite - iOSTests.xctest";
+			remoteRef = 35CA2AB81E12920400147290 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35CA2ABB1E12920400147290 /* Quick.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quick.framework;
+			remoteRef = 35CA2ABA1E12920400147290 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35CA2ABD1E12920400147290 /* Quick - tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Quick - tvOSTests.xctest";
+			remoteRef = 35CA2ABC1E12920400147290 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35CA2ABF1E12920400147290 /* QuickFocused - tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickFocused - tvOSTests.xctest";
+			remoteRef = 35CA2ABE1E12920400147290 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35CA2AC11E12920400147290 /* QuickAfterSuite - tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickAfterSuite - tvOSTests.xctest";
+			remoteRef = 35CA2AC01E12920400147290 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3549BB1F1DA389CD00C63030 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D184587B25629CBE009DBA2E /* Cartfile.resolved in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3549BB5F1DA38ADB00C63030 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3721D5EA1EE59E6600673B60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D1BA32D52575226600F83FFE /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3549BB1C1DA389CD00C63030 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37EF07D51F1526BC00421D2E /* TrackedEventType.swift in Sources */,
+				398773DD20BF388A00829154 /* AssociatePersonOperation.swift in Sources */,
+				37C5A3AE1F045FCB00B69225 /* LocalValue.swift in Sources */,
+				B343B0502119FF920096777C /* VibesConfiguration.swift in Sources */,
+				B3A5D93F267BA2A000AAF8E8 /* UpdateDeviceOperationPatch.swift in Sources */,
+				D14C1B1D24F5ABC5001BDC03 /* Date+logPrefix.swift in Sources */,
+				446B6BEF203E35CA002F88AE /* EventOperation.swift in Sources */,
+				374B50931EE2F3B9004197D1 /* StubURLSession.swift in Sources */,
+				D1E6A6ED24EE789A00CBC405 /* CombinedLogger.swift in Sources */,
+				374B50321EE2E174004197D1 /* StubHTTPResourceClient.swift in Sources */,
+				37C5A3B01F04690E00B69225 /* LocalObject.swift in Sources */,
+				446B6BFB203E36A0002F88AE /* BaseOperation.swift in Sources */,
+				446B6BF3203E360F002F88AE /* RegisterPushOperation.swift in Sources */,
+				446B6BF5203E3632002F88AE /* UnregisterPushOperation.swift in Sources */,
+				37F1938F1F27D2620035F1E7 /* URLRequest+cURL.swift in Sources */,
+				EB3679DD22EAE1EB00E20BBE /* UpdateMessageOperation.swift in Sources */,
+				37F193DE1F27ED360035F1E7 /* HTTPURLResponse+cURL.swift in Sources */,
+				B3B699B52121FC74001C4DA6 /* StubVibesWithMockStorage.swift in Sources */,
+				3764805A1F16C26F00DD63C1 /* PersistentEventStorage.swift in Sources */,
+				37C5A3AA1F045FAB00B69225 /* LocalStorageKeys.swift in Sources */,
+				379792411EE6396900AD7B7D /* CredentialManager.swift in Sources */,
+				446B6BF9203E3673002F88AE /* UnregisterDeviceOperation.swift in Sources */,
+				37F76B1A20C82BF1008DDD9E /* StubVibesAPIDelegate.swift in Sources */,
+				379792331EE62D9500AD7B7D /* AuthTokenBehavior.swift in Sources */,
+				2FAC03B722CA133E008C2D98 /* Extensions.swift in Sources */,
+				EBF5D87322D727A10042DD2F /* GetPersonOperation.swift in Sources */,
+				02C88C691EE05450001626AD /* HTTPResourceClient.swift in Sources */,
+				02C88C811EE0561E001626AD /* Credential.swift in Sources */,
+				2F01A59022DDE55E00D86D37 /* GetInboxMessagesOperation.swift in Sources */,
+				37F193E91F27F6020035F1E7 /* VibesLogger.swift in Sources */,
+				37EFD7C91EE854EC00EB01CC /* ResourceResult.swift in Sources */,
+				442653A92051994400BE1E08 /* VibesAPIDelegate.swift in Sources */,
+				374B504E1EE2E561004197D1 /* VibesAPI.swift in Sources */,
+				375DD5041EE1CC9400696B24 /* HTTPMethod.swift in Sources */,
+				374B50621EE2E845004197D1 /* StubVibesAPI.swift in Sources */,
+				3721D5D21EE59B7600673B60 /* HTTPBehavior.swift in Sources */,
+				0255531A1F43415800DBFD36 /* InputStream+readToString.swift in Sources */,
+				375DD4F61EE07E0000696B24 /* DeviceType.swift in Sources */,
+				446B6BF7203E3653002F88AE /* RegisterDeviceOperation.swift in Sources */,
+				377F1F661EE73A3D000706DB /* VibesResult.swift in Sources */,
+				D1B488AF2510E9D1001D3DD0 /* GitTag.swift in Sources */,
+				373C79871EF40B2600470E8B /* DeviceToken.swift in Sources */,
+				3721D5B81EE5930A00673B60 /* StubDevice.swift in Sources */,
+				37F193E11F27F21C0035F1E7 /* ConsoleLogger.swift in Sources */,
+				37EF07D71F1529E700421D2E /* Event.swift in Sources */,
+				37EF07F61F15317300421D2E /* Dictionary+merged.swift in Sources */,
+				B3A8101F25595FE80087E780 /* GetVibesAppInfoOperation.swift in Sources */,
+				2FC1C7C322DDB54B00942AFD /* InboxMessage.swift in Sources */,
+				446B6BED203E359B002F88AE /* UpdateDeviceOperationPut.swift in Sources */,
+				373B024D1F147100007C5B2A /* AppObserver.swift in Sources */,
+				2F260FDD235FA9CD00CC403D /* GetInboxMessageOperation.swift in Sources */,
+				37F1937B1F27D1730035F1E7 /* VibesURLProtocol.swift in Sources */,
+				446B6BEA203E355D002F88AE /* VibesQueueOperation.swift in Sources */,
+				B3A8103D255AC47B0087E780 /* VibesAppInfo.swift in Sources */,
+				375DD4EA1EE06EE700696B24 /* HTTPResource.swift in Sources */,
+				B3DB6ED1260A5786002E50AC /* MigrationCallbackOperation.swift in Sources */,
+				D14214BD26C2C45D00969BB6 /* FoundationExtensions.swift in Sources */,
+				02C88C671EE05450001626AD /* Vibes.swift in Sources */,
+				375DD4FB1EE08B5600696B24 /* JSONParser.swift in Sources */,
+				37647FD21F153E2B00DD63C1 /* Date+iso8601.swift in Sources */,
+				0214AD041EE1E2F500AB1D41 /* LocalStorageType.swift in Sources */,
+				37C5A3B21F046E9D00B69225 /* UserDefaultsStorage.swift in Sources */,
+				EBF5D85E22D723FB0042DD2F /* Person.swift in Sources */,
+				376480581F16C25400DD63C1 /* EventCollection.swift in Sources */,
+				375DD4EC1EE0717C00696B24 /* APIDefinition.swift in Sources */,
+				3764803E1F16841300DD63C1 /* StubEventTracker.swift in Sources */,
+				023B11181EFAA70000C79B83 /* KeychainStorage.swift in Sources */,
+				376480441F16B4F600DD63C1 /* EventTracker.swift in Sources */,
+				D1B488C72510F781001D3DD0 /* GetGitTagsOperation.swift in Sources */,
+				37C5A3591F0407E900B69225 /* StubStorage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3549BB5D1DA38ADB00C63030 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14C1B0824F59F84001BDC03 /* CombinedLogger.swift in Sources */,
+				44B4B7AA203E9A7B009D705A /* UpdateDeviceOperationPut.swift in Sources */,
+				44B4B7A3203E9A12009D705A /* BaseOperation.swift in Sources */,
+				D14C1B1E24F5ABC5001BDC03 /* Date+logPrefix.swift in Sources */,
+				44B4B790203E9847009D705A /* HTTPURLResponse+cURL.swift in Sources */,
+				374B50971EE4C469004197D1 /* ResourceSpec.swift in Sources */,
+				44B4B793203E9850009D705A /* VibesAPI.swift in Sources */,
+				2FC1C7C722DDBF0E00942AFD /* InboxMessageSpec.swift in Sources */,
+				B343B0512119FF920096777C /* VibesConfiguration.swift in Sources */,
+				44B4B792203E984D009D705A /* AuthTokenBehavior.swift in Sources */,
+				37C5A3B51F046FC500B69225 /* UserDefaultsStorageSpec.swift in Sources */,
+				44B4B799203E989D009D705A /* ResourceResult.swift in Sources */,
+				44B4B77C203E93B4009D705A /* LocalStorageKeys.swift in Sources */,
+				37F76B1B20C82BF9008DDD9E /* StubVibesAPIDelegate.swift in Sources */,
+				446CFD5F20448CE1004889E5 /* BaseOperationSpec.swift in Sources */,
+				44B4B78E203E9842009D705A /* Date+iso8601.swift in Sources */,
+				44B4B795203E9858009D705A /* EventTracker.swift in Sources */,
+				44B4B7A6203E9A5B009D705A /* UnregisterDeviceOperation.swift in Sources */,
+				44B4B7AB203E9A83009D705A /* RegisterDeviceOperation.swift in Sources */,
+				44B4B77A203E9396009D705A /* LocalStorageType.swift in Sources */,
+				D14214BE26C2C45D00969BB6 /* FoundationExtensions.swift in Sources */,
+				44B4B787203E97C1009D705A /* Event.swift in Sources */,
+				442653D22051B39600BE1E08 /* VibesAPIDelegate.swift in Sources */,
+				44B4B7A5203E9A4C009D705A /* APIDefinition.swift in Sources */,
+				D1B488B02510E9D1001D3DD0 /* GitTag.swift in Sources */,
+				B3A8103E255AC47B0087E780 /* VibesAppInfo.swift in Sources */,
+				44B4B78F203E9844009D705A /* URLRequest+cURL.swift in Sources */,
+				B3DB6ED2260A5786002E50AC /* MigrationCallbackOperation.swift in Sources */,
+				44B4B7AC203E9ABA009D705A /* VibesURLProtocol.swift in Sources */,
+				375DD4F91EE07F1C00696B24 /* DeviceTypeSpec.swift in Sources */,
+				44B4B794203E9854009D705A /* AppObserver.swift in Sources */,
+				44B4B783203E957A009D705A /* UserDefaultsStorage.swift in Sources */,
+				44B4B79A203E98EC009D705A /* HTTPResource.swift in Sources */,
+				44B4B7A8203E9A67009D705A /* UnregisterPushOperation.swift in Sources */,
+				44B4B780203E93E4009D705A /* JSONParser.swift in Sources */,
+				44B4B78A203E9824009D705A /* PersistentEventStorage.swift in Sources */,
+				37C7F2021F1956B400C0756A /* VibesErrorSpec.swift in Sources */,
+				374B50951EE4C198004197D1 /* CredentialSpec.swift in Sources */,
+				44B4B7A7203E9A62009D705A /* RegisterPushOperation.swift in Sources */,
+				44B4B79E203E9972009D705A /* VibesLogger.swift in Sources */,
+				398773DE20BF4B5200829154 /* AssociatePersonOperation.swift in Sources */,
+				D1B488C52510EC06001D3DD0 /* GitTagSpec.swift in Sources */,
+				B3B699B62121FC74001C4DA6 /* StubVibesWithMockStorage.swift in Sources */,
+				44B4B781203E9428009D705A /* LocalObject.swift in Sources */,
+				44B4B78B203E982D009D705A /* VibesResult.swift in Sources */,
+				44B4B79C203E9910009D705A /* HTTPResourceClient.swift in Sources */,
+				44B4B7AE203E9ADF009D705A /* ConsoleLogger.swift in Sources */,
+				3721D6071EE5A0C400673B60 /* VibesAPISpec.swift in Sources */,
+				EBF5D88122D739B40042DD2F /* PersonSpec.swift in Sources */,
+				373C799E1EF40DCE00470E8B /* APIDefinitionSpec.swift in Sources */,
+				44B4B7AD203E9AD1009D705A /* StubDevice.swift in Sources */,
+				44B4B798203E987F009D705A /* DeviceToken.swift in Sources */,
+				373C799C1EF40CD900470E8B /* DeviceTokenSpec.swift in Sources */,
+				2F01A59122DDEE4600D86D37 /* GetInboxMessagesOperation.swift in Sources */,
+				44B4B786203E97B8009D705A /* EventCollection.swift in Sources */,
+				3721D5D51EE59E1000673B60 /* AuthTokenBehaviorSpec.swift in Sources */,
+				44B4B77F203E93D7009D705A /* LocalValue.swift in Sources */,
+				B321D233255BCF3F00E86DB6 /* VibesAppInfoSpec.swift in Sources */,
+				44B4B79D203E9919009D705A /* HTTPBehavior.swift in Sources */,
+				375DD4FE1EE08CE300696B24 /* JSONParserSpec.swift in Sources */,
+				EBF5D85F22D723FB0042DD2F /* Person.swift in Sources */,
+				2F260FF0235FAFE500CC403D /* GetInboxMessageOperation.swift in Sources */,
+				B3A5D940267BA2A000AAF8E8 /* UpdateDeviceOperationPatch.swift in Sources */,
+				44B4B7A2203E9A0A009D705A /* EventOperation.swift in Sources */,
+				44B4B7A0203E99CB009D705A /* StubVibesAPI.swift in Sources */,
+				44B4B784203E975E009D705A /* CredentialManager.swift in Sources */,
+				3764805F1F16C36400DD63C1 /* PersistentEventStorageSpec.swift in Sources */,
+				44B4B788203E97CA009D705A /* TrackedEventType.swift in Sources */,
+				44B4B791203E984A009D705A /* InputStream+readToString.swift in Sources */,
+				44B4B797203E9878009D705A /* DeviceType.swift in Sources */,
+				B3A8102025595FE80087E780 /* GetVibesAppInfoOperation.swift in Sources */,
+				44B4B782203E955E009D705A /* Credential.swift in Sources */,
+				375DD4F21EE0772600696B24 /* VibesSpec.swift in Sources */,
+				EBF5D87422D727A10042DD2F /* GetPersonOperation.swift in Sources */,
+				44B4B7A4203E9A2B009D705A /* VibesQueueOperation.swift in Sources */,
+				EB3679DE22EAE1EB00E20BBE /* UpdateMessageOperation.swift in Sources */,
+				44B4B79F203E998D009D705A /* StubHTTPResourceClient.swift in Sources */,
+				02C88C831EE059D4001626AD /* HTTPResourceClientSpec.swift in Sources */,
+				44B4B789203E9815009D705A /* Vibes.swift in Sources */,
+				44B4B7A1203E99EA009D705A /* StubURLSession.swift in Sources */,
+				37C5A3571F04077A00B69225 /* CredentialManagerSpec.swift in Sources */,
+				37647FD51F153E9900DD63C1 /* EventSpec.swift in Sources */,
+				44B4B79B203E98F4009D705A /* HTTPMethod.swift in Sources */,
+				44B4B796203E986C009D705A /* KeychainStorage.swift in Sources */,
+				D1B488C82510F781001D3DD0 /* GetGitTagsOperation.swift in Sources */,
+				44B4B785203E977E009D705A /* StubStorage.swift in Sources */,
+				2FC1C7C422DDB55A00942AFD /* InboxMessage.swift in Sources */,
+				44B4B78D203E983F009D705A /* Dictionary+merged.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3721D5DD1EE59E6600673B60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3549BB681DA38ADB00C63030 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3549BB201DA389CD00C63030 /* VibesPush-iOS */;
+			targetProxy = 3549BB671DA38ADB00C63030 /* PBXContainerItemProxy */;
+		};
+		35CA2AC31E12922F00147290 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Quick-iOS";
+			targetProxy = 35CA2AC21E12922F00147290 /* PBXContainerItemProxy */;
+		};
+		35CA2AC51E12922F00147290 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Nimble-iOS";
+			targetProxy = 35CA2AC41E12922F00147290 /* PBXContainerItemProxy */;
+		};
+		3721D5D71EE59E6600673B60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Quick-iOS";
+			targetProxy = 3721D5D81EE59E6600673B60 /* PBXContainerItemProxy */;
+		};
+		3721D5D91EE59E6600673B60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Nimble-iOS";
+			targetProxy = 3721D5DA1EE59E6600673B60 /* PBXContainerItemProxy */;
+		};
+		3721D5DB1EE59E6600673B60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3549BB201DA389CD00C63030 /* VibesPush-iOS */;
+			targetProxy = 3721D5DC1EE59E6600673B60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3549BB0B1DA387DB00C63030 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_CODE_COVERAGE = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3549BB0C1DA387DB00C63030 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_CODE_COVERAGE = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3549BB271DA389CD00C63030 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEBUG_ACTIVITY_MODE = "";
+				"DEBUG_ACTIVITY_MODE[sdk=iphonesimulator*]" = disable;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/xcconfigs/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/xcconfigs/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/xcconfigs/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vibes.push.VibesPush;
+				PRODUCT_NAME = VibesPush;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3549BB281DA389CD00C63030 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEBUG_ACTIVITY_MODE = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/xcconfigs/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/xcconfigs/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/xcconfigs/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vibes.push.VibesPush;
+				PRODUCT_NAME = VibesPush;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3549BB6A1DA38ADB00C63030 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = N68EHK7Q3H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vibes.push.VibesPushTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3549BB6B1DA38ADB00C63030 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = N68EHK7Q3H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vibes.push.VibesPushTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3721D5EC1EE59E6600673B60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "VibesPushTests-iOS copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vibes.push.VibesPushTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		3721D5ED1EE59E6600673B60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "VibesPushTests-iOS copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vibes.push.VibesPushTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3549BAFF1DA387DB00C63030 /* Build configuration list for PBXProject "VibesPush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3549BB0B1DA387DB00C63030 /* Debug */,
+				3549BB0C1DA387DB00C63030 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3549BB261DA389CD00C63030 /* Build configuration list for PBXNativeTarget "VibesPush-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3549BB271DA389CD00C63030 /* Debug */,
+				3549BB281DA389CD00C63030 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3549BB691DA38ADB00C63030 /* Build configuration list for PBXNativeTarget "VibesPushTests-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3549BB6A1DA38ADB00C63030 /* Debug */,
+				3549BB6B1DA38ADB00C63030 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3721D5EB1EE59E6600673B60 /* Build configuration list for PBXNativeTarget "VibesPushIntegrationTests-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3721D5EC1EE59E6600673B60 /* Debug */,
+				3721D5ED1EE59E6600673B60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3549BAFC1DA387DB00C63030 /* Project object */;
+}

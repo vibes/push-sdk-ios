@@ -1,0 +1,30 @@
+#!/bin/bash
+# fail if any commands fails
+set -e
+# debug log
+set -x
+
+# Update ruby version
+echo "ruby: $(ruby -v)"
+
+brew update &> /dev/null || brew update &> /dev/null || brew update &> /dev/null
+
+brew install rbenv
+
+eval "$(rbenv init -)"
+
+curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
+
+rbenv install 2.4.1
+rbenv global 2.4.1
+rbenv versions
+
+gem install bundler
+
+envman add --key PATH --value $PATH
+
+# write your script here
+bundle install
+bin/bootstrap
+bin/lint
+bin/test
