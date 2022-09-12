@@ -1,0 +1,7 @@
+github "jspahrsummers/xcconfigs" "master"
+
+# We should now be using latest version of Quick
+# Read more here: https://github.com/Quick/Quick/issues/739
+# https://github.com/Quick/Quick/pull/694 is also fixed in latest version.
+github "Quick/Nimble" "v10.0.0"
+github "Quick/Quick" "v5.0.1"

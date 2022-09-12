@@ -1,0 +1,33 @@
+included:
+  - Sources
+  - Tests
+  - IntegrationTests
+
+disabled_rules: # rule identifiers to exclude from running
+  - force_cast
+  - file_length
+  - type_body_length
+  - multiple_closures_with_trailing_closure
+opt_in_rules: # some rules are only opt-in
+  - empty_count
+  # Find all the available rules by running:
+  # swiftlint rules
+#included: # paths to include during linting. `--path` is ignored if present.
+#  - Source
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+line_length: 150
+trailing_comma:
+  mandatory_comma: true
+identifier_name:
+  excluded:
+    - SDK_VERSION
+    - CURRENT_APP_ID
+    - CREDENTIALS_KEY
+    - REGISTER_PUSH_STATUS
+    - MAX_RETRY
+    - MAX_SEC
+    - _self
+    - id
+function_parameter_count:
+  warning: 6
