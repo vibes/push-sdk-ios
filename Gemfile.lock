@@ -223,7 +223,8 @@ GEM
     jmespath (1.4.0)
     json (2.1.0)
     jwt (2.2.3)
-    kramdown (2.1.0)
+    kramdown (2.4.0)
+      rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     liferaft (0.0.6)
