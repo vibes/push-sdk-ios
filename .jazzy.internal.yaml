@@ -1,0 +1,6 @@
+clean: true
+min_acl: internal
+exclude: 
+  - Tests/*
+  - IntegrationTests/*
+output: docs/internal

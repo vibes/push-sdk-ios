@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F3241942388233D00BFB9DD /* InboxDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3241932388233D00BFB9DD /* InboxDetailViewController.swift */; };
+		2FDCD044238417090095BF74 /* InboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B353BDBD237A2525008491D0 /* InboxTableViewCell.swift */; };
+		2FF9BF62238C280300242599 /* InboxDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3241932388233D00BFB9DD /* InboxDetailViewController.swift */; };
+		B304A604237A0A9C00523648 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B304A603237A0A9C00523648 /* InboxViewController.swift */; };
+		B304A605237A0A9C00523648 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B304A603237A0A9C00523648 /* InboxViewController.swift */; };
+		B353BDBE237A2525008491D0 /* InboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B353BDBD237A2525008491D0 /* InboxTableViewCell.swift */; };
+		B3DFE87A20FD3E450019511A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DFE87920FD3E450019511A /* AppDelegate.swift */; };
+		B3DFE87C20FD3E450019511A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DFE87B20FD3E450019511A /* HomeViewController.swift */; };
+		B3DFE87F20FD3E450019511A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3DFE87D20FD3E450019511A /* Main.storyboard */; };
+		B3DFE88120FD3E470019511A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3DFE88020FD3E470019511A /* Assets.xcassets */; };
+		B3DFE88420FD3E470019511A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3DFE88220FD3E470019511A /* LaunchScreen.storyboard */; };
+		B3DFE88F20FD3E470019511A /* Vibes_SDK_Sample_app_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DFE88E20FD3E470019511A /* Vibes_SDK_Sample_app_Tests.swift */; };
+		B3F6DE3A2111A3B0001A793E /* VibesPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F6DE342111A309001A793E /* VibesPush.framework */; };
+		B3F6DE3B2111A3B0001A793E /* VibesPush.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3F6DE342111A309001A793E /* VibesPush.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3DFE88B20FD3E470019511A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3DFE86E20FD3E450019511A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3DFE87520FD3E450019511A;
+			remoteInfo = "Vibes SDK Sample app 1";
+		};
+		B3F6DE332111A309001A793E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3F6DE2B2111A309001A793E /* VibesPush.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB211DA389CD00C63030;
+			remoteInfo = "VibesPush-iOS";
+		};
+		B3F6DE352111A309001A793E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3F6DE2B2111A309001A793E /* VibesPush.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3549BB611DA38ADB00C63030;
+			remoteInfo = "VibesPushTests-iOS";
+		};
+		B3F6DE372111A309001A793E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3F6DE2B2111A309001A793E /* VibesPush.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3721D5EE1EE59E6600673B60;
+			remoteInfo = "VibesPushIntegrationTests-iOS";
+		};
+		B3F6DE3C2111A3B0001A793E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3F6DE2B2111A309001A793E /* VibesPush.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3549BB201DA389CD00C63030;
+			remoteInfo = "VibesPush-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B3A7A40E21065AAE00EDCE9C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B3F6DE3B2111A3B0001A793E /* VibesPush.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2F3241932388233D00BFB9DD /* InboxDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxDetailViewController.swift; sourceTree = "<group>"; };
+		B304A603237A0A9C00523648 /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
+		B353BDBD237A2525008491D0 /* InboxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxTableViewCell.swift; sourceTree = "<group>"; };
+		B36E5EDF237D852A00916F94 /* VibesSDKSampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VibesSDKSampleApp.entitlements; sourceTree = "<group>"; };
+		B3DFE87620FD3E450019511A /* VibesSDKSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VibesSDKSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3DFE87920FD3E450019511A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3DFE87B20FD3E450019511A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B3DFE87E20FD3E450019511A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3DFE88020FD3E470019511A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3DFE88320FD3E470019511A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3DFE88520FD3E470019511A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3DFE88A20FD3E470019511A /* VibesSDKSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VibesSDKSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3DFE88E20FD3E470019511A /* Vibes_SDK_Sample_app_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibes_SDK_Sample_app_Tests.swift; sourceTree = "<group>"; };
+		B3DFE89020FD3E470019511A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3DFE8A920FD41D90019511A /* Vibes SDK Sample app 1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Vibes SDK Sample app 1.xcodeproj"; sourceTree = "<group>"; };
+		B3F6DE2B2111A309001A793E /* VibesPush.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VibesPush.xcodeproj; path = ../VibesPush.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3DFE87320FD3E450019511A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3F6DE3A2111A3B0001A793E /* VibesPush.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3DFE88720FD3E470019511A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3DFE86D20FD3E450019511A = {
+			isa = PBXGroup;
+			children = (
+				B3F6DE2B2111A309001A793E /* VibesPush.xcodeproj */,
+				B3DFE87820FD3E450019511A /* VibesSDKSampleApp */,
+				B3DFE88D20FD3E470019511A /* VibesSDKSampleAppTests */,
+				B3DFE87720FD3E450019511A /* Products */,
+				B3DFE8A820FD41D90019511A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B3DFE87720FD3E450019511A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3DFE87620FD3E450019511A /* VibesSDKSampleApp.app */,
+				B3DFE88A20FD3E470019511A /* VibesSDKSampleAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3DFE87820FD3E450019511A /* VibesSDKSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				B36E5EDF237D852A00916F94 /* VibesSDKSampleApp.entitlements */,
+				B3DFE87920FD3E450019511A /* AppDelegate.swift */,
+				B3DFE87B20FD3E450019511A /* HomeViewController.swift */,
+				B353BDBD237A2525008491D0 /* InboxTableViewCell.swift */,
+				B304A603237A0A9C00523648 /* InboxViewController.swift */,
+				2F3241932388233D00BFB9DD /* InboxDetailViewController.swift */,
+				B3DFE87D20FD3E450019511A /* Main.storyboard */,
+				B3DFE88020FD3E470019511A /* Assets.xcassets */,
+				B3DFE88220FD3E470019511A /* LaunchScreen.storyboard */,
+				B3DFE88520FD3E470019511A /* Info.plist */,
+			);
+			path = VibesSDKSampleApp;
+			sourceTree = "<group>";
+		};
+		B3DFE88D20FD3E470019511A /* VibesSDKSampleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3DFE88E20FD3E470019511A /* Vibes_SDK_Sample_app_Tests.swift */,
+				B3DFE89020FD3E470019511A /* Info.plist */,
+			);
+			path = VibesSDKSampleAppTests;
+			sourceTree = "<group>";
+		};
+		B3DFE8A820FD41D90019511A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3DFE8A920FD41D90019511A /* Vibes SDK Sample app 1.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3DFE8AA20FD41D90019511A /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3F6DE2C2111A309001A793E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3F6DE342111A309001A793E /* VibesPush.framework */,
+				B3F6DE362111A309001A793E /* VibesPushTests-iOS.xctest */,
+				B3F6DE382111A309001A793E /* VibesPushIntegrationTests-iOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3DFE87520FD3E450019511A /* VibesSDKSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3DFE89320FD3E470019511A /* Build configuration list for PBXNativeTarget "VibesSDKSampleApp" */;
+			buildPhases = (
+				B3DFE87220FD3E450019511A /* Sources */,
+				B3DFE87320FD3E450019511A /* Frameworks */,
+				B3DFE87420FD3E450019511A /* Resources */,
+				B3A7A40E21065AAE00EDCE9C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3F6DE3D2111A3B0001A793E /* PBXTargetDependency */,
+			);
+			name = VibesSDKSampleApp;
+			productName = "Vibes SDK Sample app 1";
+			productReference = B3DFE87620FD3E450019511A /* VibesSDKSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3DFE88920FD3E470019511A /* VibesSDKSampleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3DFE89620FD3E470019511A /* Build configuration list for PBXNativeTarget "VibesSDKSampleAppTests" */;
+			buildPhases = (
+				B3DFE88620FD3E470019511A /* Sources */,
+				B3DFE88720FD3E470019511A /* Frameworks */,
+				B3DFE88820FD3E470019511A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3DFE88C20FD3E470019511A /* PBXTargetDependency */,
+			);
+			name = VibesSDKSampleAppTests;
+			productName = "Vibes SDK Sample app 1Tests";
+			productReference = B3DFE88A20FD3E470019511A /* VibesSDKSampleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3DFE86E20FD3E450019511A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Vibes Media";
+				TargetAttributes = {
+					B3DFE87520FD3E450019511A = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1120;
+					};
+					B3DFE88920FD3E470019511A = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = B3DFE87520FD3E450019511A;
+					};
+				};
+			};
+			buildConfigurationList = B3DFE87120FD3E450019511A /* Build configuration list for PBXProject "VibesSDKSampleApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3DFE86D20FD3E450019511A;
+			productRefGroup = B3DFE87720FD3E450019511A /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B3DFE8AA20FD41D90019511A /* Products */;
+					ProjectRef = B3DFE8A920FD41D90019511A /* Vibes SDK Sample app 1.xcodeproj */;
+				},
+				{
+					ProductGroup = B3F6DE2C2111A309001A793E /* Products */;
+					ProjectRef = B3F6DE2B2111A309001A793E /* VibesPush.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				B3DFE87520FD3E450019511A /* VibesSDKSampleApp */,
+				B3DFE88920FD3E470019511A /* VibesSDKSampleAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B3F6DE342111A309001A793E /* VibesPush.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VibesPush.framework;
+			remoteRef = B3F6DE332111A309001A793E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B3F6DE362111A309001A793E /* VibesPushTests-iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "VibesPushTests-iOS.xctest";
+			remoteRef = B3F6DE352111A309001A793E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B3F6DE382111A309001A793E /* VibesPushIntegrationTests-iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "VibesPushIntegrationTests-iOS.xctest";
+			remoteRef = B3F6DE372111A309001A793E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3DFE87420FD3E450019511A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3DFE88420FD3E470019511A /* LaunchScreen.storyboard in Resources */,
+				B3DFE88120FD3E470019511A /* Assets.xcassets in Resources */,
+				B3DFE87F20FD3E450019511A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3DFE88820FD3E470019511A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3DFE87220FD3E450019511A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B304A604237A0A9C00523648 /* InboxViewController.swift in Sources */,
+				B3DFE87C20FD3E450019511A /* HomeViewController.swift in Sources */,
+				B353BDBE237A2525008491D0 /* InboxTableViewCell.swift in Sources */,
+				B3DFE87A20FD3E450019511A /* AppDelegate.swift in Sources */,
+				2F3241942388233D00BFB9DD /* InboxDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3DFE88620FD3E470019511A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FF9BF62238C280300242599 /* InboxDetailViewController.swift in Sources */,
+				B304A605237A0A9C00523648 /* InboxViewController.swift in Sources */,
+				B3DFE88F20FD3E470019511A /* Vibes_SDK_Sample_app_Tests.swift in Sources */,
+				2FDCD044238417090095BF74 /* InboxTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3DFE88C20FD3E470019511A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3DFE87520FD3E450019511A /* VibesSDKSampleApp */;
+			targetProxy = B3DFE88B20FD3E470019511A /* PBXContainerItemProxy */;
+		};
+		B3F6DE3D2111A3B0001A793E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VibesPush-iOS";
+			targetProxy = B3F6DE3C2111A3B0001A793E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B3DFE87D20FD3E450019511A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3DFE87E20FD3E450019511A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B3DFE88220FD3E470019511A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3DFE88320FD3E470019511A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3DFE89120FD3E470019511A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3DFE89220FD3E470019511A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3DFE89420FD3E470019511A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = VibesSDKSampleApp/VibesSDKSampleApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N68EHK7Q3H;
+				INFOPLIST_FILE = VibesSDKSampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vibes.push.demoApp.uat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3DFE89520FD3E470019511A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = VibesSDKSampleApp/VibesSDKSampleApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N68EHK7Q3H;
+				INFOPLIST_FILE = VibesSDKSampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vibes.push.demoApp.uat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B3DFE89720FD3E470019511A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N68EHK7Q3H;
+				INFOPLIST_FILE = VibesSDKSampleAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vibes.Vibes-SDK-Sample-app-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VibesSDKSampleApp.app/VibesSDKSampleApp";
+			};
+			name = Debug;
+		};
+		B3DFE89820FD3E470019511A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N68EHK7Q3H;
+				INFOPLIST_FILE = VibesSDKSampleAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vibes.Vibes-SDK-Sample-app-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VibesSDKSampleApp.app/VibesSDKSampleApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3DFE87120FD3E450019511A /* Build configuration list for PBXProject "VibesSDKSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3DFE89120FD3E470019511A /* Debug */,
+				B3DFE89220FD3E470019511A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3DFE89320FD3E470019511A /* Build configuration list for PBXNativeTarget "VibesSDKSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3DFE89420FD3E470019511A /* Debug */,
+				B3DFE89520FD3E470019511A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3DFE89620FD3E470019511A /* Build configuration list for PBXNativeTarget "VibesSDKSampleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3DFE89720FD3E470019511A /* Debug */,
+				B3DFE89820FD3E470019511A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3DFE86E20FD3E450019511A /* Project object */;
+}
