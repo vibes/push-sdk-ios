@@ -16,13 +16,18 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Values come from Info.plist (VibesApiURL / VibesAppId); see .env.example
+    NSString *apiUrl = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"VibesApiURL"];
+    NSString *appId = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"VibesAppId"];
+
     VibesConfiguration *vibesConfig = [[VibesConfiguration alloc] initWithAdvertisingId:NULL
-                                                                                 apiUrl:@"[YOUR_API_URL_HERE]"trackingApiUrl:@"[YOUR_API_URL_HERE]"
+                                                                                 apiUrl:apiUrl
+                                                                        trackingApiUrl:apiUrl
                                                                                  logger:self // use NULL if you dont wish to track SDK logs
                                                                             storageType:VibesStorageEnumUSERDEFAULTS
                                                                       trackedEventTypes:[@[] mutableCopy]];
 
-    [Vibes configureWithAppId:@"[YOUR_APP_ID_HERE]"
+    [Vibes configureWithAppId:appId
                 configuration:vibesConfig];
     [[Vibes shared] setWithDelegate:(id)self];
 
@@ -39,6 +44,12 @@
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
     [[Vibes shared] unregisterPush];
+}
+
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center
+       willPresentNotification:(UNNotification *)notification
+         withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler {
+    completionHandler(UNNotificationPresentationOptionSound | UNNotificationPresentationOptionAlert | UNNotificationPresentationOptionBadge);
 }
 
 - (void)requestAuthorizationForNotifications {

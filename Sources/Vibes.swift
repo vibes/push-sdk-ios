@@ -41,7 +41,7 @@ private var vibesInstance: Vibes!
 /// The main entry point for usage of the Vibes API.
 @objc public class Vibes: NSObject, EventTracker {
     /// The released version of the Vibes SDK
-    public static let SDK_VERSION = "4.8.3"
+    public static let SDK_VERSION = "5.0.0"
 
     /// The app ID
     public static let CURRENT_APP_ID = "CURRENT_APP_ID"

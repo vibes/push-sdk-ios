@@ -3,16 +3,20 @@ import UserNotifications
 import VibesPush
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        // Values come from Info.plist (VibesApiURL / VibesAppId); see .env.example
+        let apiUrl = Bundle.main.object(forInfoDictionaryKey: "VibesApiURL") as? String ?? ""
+        let appId = Bundle.main.object(forInfoDictionaryKey: "VibesAppId") as? String ?? ""
+
         let vibesConfig = VibesConfiguration(advertisingId: nil,
-                           apiUrl: "<apiUrl>",
+                           apiUrl: apiUrl,
                            logger: self, // use `nil` if you dont wish to track SDK logs
                            storageType: VibesStorageEnum.USERDEFAULTS)
-        Vibes.configure(appId: "<appId>",
+        Vibes.configure(appId: appId,
                         configuration: vibesConfig)
         Vibes.shared.set(delegate: self)
         
@@ -59,8 +63,14 @@ extension AppDelegate: VibesLogger {
     }
 }
 extension AppDelegate: VibesAPIDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                willPresent notification: UNNotification,
+                                withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.banner, .sound, .badge])
+    }
+
     func registerForPushNotifications() {
-        UNUserNotificationCenter.current().delegate = self as? UNUserNotificationCenterDelegate
+        UNUserNotificationCenter.current().delegate = self
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {
             (granted, _) in
             print("Permission granted: \(granted)")

@@ -1,1 +1,0 @@
-bundle exec fastlane run scan scheme:VibesPush-iOS
