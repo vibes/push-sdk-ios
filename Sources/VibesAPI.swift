@@ -30,17 +30,14 @@ class VibesAPI: VibesAPIType {
   /// - parameters:
   ///   - url: the URL object used for creating client.
   convenience init(url: URL) {
-
-    VibesURLProtocol.register()
     let sessionConfig = URLSessionConfiguration.default
-    var protos = sessionConfig.protocolClasses ?? []
-    protos.insert(VibesURLProtocol.self, at: 0)
-    sessionConfig.protocolClasses = protos
     sessionConfig.timeoutIntervalForRequest = 5.0
     sessionConfig.timeoutIntervalForResource = 5.0
     let session = URLSession(configuration: sessionConfig)
 
-    let client = HTTPResourceClient(baseURL: url, session: session)
+    let client = HTTPResourceClient(baseURL: url, session: session) {
+      Vibes.configuredLogger
+    }
     self.init(client: client)
   }
 

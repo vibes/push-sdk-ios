@@ -3,6 +3,17 @@ import Quick
 import Nimble
 @testable import VibesPush
 
+private final class SpyHTTPLogger: NSObject, VibesLogger {
+  var requests: [URLRequest] = []
+  var responses: [URLResponse] = []
+  var errors: [Error] = []
+
+  func log(_ logObject: LogObject) {}
+  func log(request: URLRequest) { requests.append(request) }
+  func log(response: URLResponse, data: Data?) { responses.append(response) }
+  func log(error: Error) { errors.append(error) }
+}
+
 class HTTPResourceClientSpec: QuickSpec {
   override func spec() {
     let url = URL(string: "http://example.com")!
@@ -114,6 +125,39 @@ class HTTPResourceClientSpec: QuickSpec {
         }
 
         expect(value).toEventually(equal("Hello"))
+      }
+    }
+
+    context("HTTP logging") {
+      it("logs the request and response on success") {
+        let logger = SpyHTTPLogger()
+        let resource = HTTPResource<String>(path: "/", method: .GET, requestBody: nil, headers: [:]) { _ in
+          return "Hello"
+        }
+        let response = HTTPURLResponse(url: url, statusCode: 201, httpVersion: nil, headerFields: nil)
+        let data = Data(bytes: [10])
+        let session = StubURLSession(data: data, response: response, error: nil)
+        let client = HTTPResourceClient(baseURL: url, session: session) { logger }
+
+        client.request(resource: resource) { _ in }
+
+        expect(logger.requests.count).to(equal(1))
+        expect(logger.responses.count).to(equal(1))
+        expect(logger.errors).to(beEmpty())
+      }
+
+      it("logs the request and transport error") {
+        let logger = SpyHTTPLogger()
+        let resource = HTTPResource(path: "/") { _ in }
+        let error: Error = NSError(domain: "test", code: 1, userInfo: nil)
+        let session = StubURLSession(data: nil, response: nil, error: error)
+        let client = HTTPResourceClient(baseURL: url, session: session) { logger }
+
+        client.request(resource: resource) { _ in }
+
+        expect(logger.requests.count).to(equal(1))
+        expect(logger.errors.count).to(equal(1))
+        expect(logger.responses).to(beEmpty())
       }
     }
   }

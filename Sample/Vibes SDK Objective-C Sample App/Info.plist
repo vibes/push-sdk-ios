@@ -48,8 +48,6 @@
     <key>VibesAppId</key>
     <string>[YOUR_IOS_APP_ID]</string>
     <key>VibesApiURL</key>
-    <string>[YOUR_API_URL]</string>
-    <key>VibesAppEnv</key>
-    <string>[YOUR_APP_ENV]</string>
+    <string>https://public-api.vibescm.com/mobile_apps</string>
   </dict>
 </plist>

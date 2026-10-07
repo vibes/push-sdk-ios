@@ -41,7 +41,7 @@ private var vibesInstance: Vibes!
 /// The main entry point for usage of the Vibes API.
 @objc public class Vibes: NSObject, EventTracker {
     /// The released version of the Vibes SDK
-    public static let SDK_VERSION = "5.0.0"
+    public static let SDK_VERSION = "5.0.1"
 
     /// The app ID
     public static let CURRENT_APP_ID = "CURRENT_APP_ID"
@@ -76,6 +76,11 @@ private var vibesInstance: Vibes!
 
     /// List of Vibes delegates
     @objc public weak var delegate: VibesAPIDelegate?
+
+    /// Logger for the configured singleton, or `nil` before `configure`.
+    internal static var configuredLogger: CombinedLogger? {
+        return vibesInstance?.configuration.logger
+    }
 
     /// The shared (singleton) instance of Vibes.
     @objc public internal(set) static var shared: Vibes! {

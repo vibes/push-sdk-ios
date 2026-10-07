@@ -41,4 +41,4 @@ let package = Package(
 )
 
 // Package version
-let version = Version(5, 0, 0)
+let version = Version(5, 0, 1)

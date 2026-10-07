@@ -10,7 +10,7 @@
 		0214AD041EE1E2F500AB1D41 /* LocalStorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0214AD031EE1E2F500AB1D41 /* LocalStorageType.swift */; };
 		023B11181EFAA70000C79B83 /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B11171EFAA70000C79B83 /* KeychainStorage.swift */; };
 		0255531A1F43415800DBFD36 /* InputStream+readToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025553191F43415800DBFD36 /* InputStream+readToString.swift */; };
-		02C88C671EE05450001626AD /* Vibes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C88C651EE05450001626AD /* Vibes.swift */; };
+		02C88C671EE05450001626AD /* VibesCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C88C651EE05450001626AD /* VibesCore.swift */; };
 		02C88C691EE05450001626AD /* HTTPResourceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C88C661EE05450001626AD /* HTTPResourceClient.swift */; };
 		02C88C811EE0561E001626AD /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C88C801EE0561E001626AD /* Credential.swift */; };
 		02C88C831EE059D4001626AD /* HTTPResourceClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C88C821EE059D4001626AD /* HTTPResourceClientSpec.swift */; };
@@ -76,7 +76,6 @@
 		37EF07D71F1529E700421D2E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF07D61F1529E700421D2E /* Event.swift */; };
 		37EF07F61F15317300421D2E /* Dictionary+merged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF07F51F15317300421D2E /* Dictionary+merged.swift */; };
 		37EFD7C91EE854EC00EB01CC /* ResourceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EFD7C81EE854EC00EB01CC /* ResourceResult.swift */; };
-		37F1937B1F27D1730035F1E7 /* VibesURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1937A1F27D1730035F1E7 /* VibesURLProtocol.swift */; };
 		37F1938F1F27D2620035F1E7 /* URLRequest+cURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1938E1F27D2620035F1E7 /* URLRequest+cURL.swift */; };
 		37F193DE1F27ED360035F1E7 /* HTTPURLResponse+cURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F193DD1F27ED360035F1E7 /* HTTPURLResponse+cURL.swift */; };
 		37F193E11F27F21C0035F1E7 /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F193E01F27F21C0035F1E7 /* ConsoleLogger.swift */; };
@@ -108,7 +107,7 @@
 		44B4B786203E97B8009D705A /* EventCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376480571F16C25400DD63C1 /* EventCollection.swift */; };
 		44B4B787203E97C1009D705A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF07D61F1529E700421D2E /* Event.swift */; };
 		44B4B788203E97CA009D705A /* TrackedEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF07D41F1526BC00421D2E /* TrackedEventType.swift */; };
-		44B4B789203E9815009D705A /* Vibes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C88C651EE05450001626AD /* Vibes.swift */; };
+		44B4B789203E9815009D705A /* VibesCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C88C651EE05450001626AD /* VibesCore.swift */; };
 		44B4B78A203E9824009D705A /* PersistentEventStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376480591F16C26F00DD63C1 /* PersistentEventStorage.swift */; };
 		44B4B78B203E982D009D705A /* VibesResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F1F651EE73A3D000706DB /* VibesResult.swift */; };
 		44B4B78D203E983F009D705A /* Dictionary+merged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EF07F51F15317300421D2E /* Dictionary+merged.swift */; };
@@ -141,7 +140,6 @@
 		44B4B7A8203E9A67009D705A /* UnregisterPushOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B6BF4203E3632002F88AE /* UnregisterPushOperation.swift */; };
 		44B4B7AA203E9A7B009D705A /* UpdateDeviceOperationPut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B6BEC203E359B002F88AE /* UpdateDeviceOperationPut.swift */; };
 		44B4B7AB203E9A83009D705A /* RegisterDeviceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B6BF6203E3653002F88AE /* RegisterDeviceOperation.swift */; };
-		44B4B7AC203E9ABA009D705A /* VibesURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1937A1F27D1730035F1E7 /* VibesURLProtocol.swift */; };
 		44B4B7AD203E9AD1009D705A /* StubDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3721D5B71EE5930A00673B60 /* StubDevice.swift */; };
 		44B4B7AE203E9ADF009D705A /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F193E01F27F21C0035F1E7 /* ConsoleLogger.swift */; };
 		B321D233255BCF3F00E86DB6 /* VibesAppInfoSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B321D232255BCF3F00E86DB6 /* VibesAppInfoSpec.swift */; };
@@ -361,7 +359,7 @@
 		0214AD031EE1E2F500AB1D41 /* LocalStorageType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageType.swift; sourceTree = "<group>"; };
 		023B11171EFAA70000C79B83 /* KeychainStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
 		025553191F43415800DBFD36 /* InputStream+readToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InputStream+readToString.swift"; sourceTree = "<group>"; };
-		02C88C651EE05450001626AD /* Vibes.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = Vibes.swift; sourceTree = "<group>"; tabWidth = 2; };
+		02C88C651EE05450001626AD /* VibesCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = VibesCore.swift; sourceTree = "<group>"; tabWidth = 2; };
 		02C88C661EE05450001626AD /* HTTPResourceClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResourceClient.swift; sourceTree = "<group>"; };
 		02C88C801EE0561E001626AD /* Credential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
 		02C88C821EE059D4001626AD /* HTTPResourceClientSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResourceClientSpec.swift; sourceTree = "<group>"; };
@@ -424,7 +422,6 @@
 		37EF07D61F1529E700421D2E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		37EF07F51F15317300421D2E /* Dictionary+merged.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+merged.swift"; sourceTree = "<group>"; };
 		37EFD7C81EE854EC00EB01CC /* ResourceResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceResult.swift; sourceTree = "<group>"; };
-		37F1937A1F27D1730035F1E7 /* VibesURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VibesURLProtocol.swift; sourceTree = "<group>"; };
 		37F1938E1F27D2620035F1E7 /* URLRequest+cURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+cURL.swift"; sourceTree = "<group>"; };
 		37F193DD1F27ED360035F1E7 /* HTTPURLResponse+cURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+cURL.swift"; sourceTree = "<group>"; };
 		37F193E01F27F21C0035F1E7 /* ConsoleLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleLogger.swift; sourceTree = "<group>"; };
@@ -537,7 +534,7 @@
 				267D2C37090D15A41E2A8EE8 /* Info.plist */,
 				2FC1C7B022DDB54B00942AFD /* InboxMessage.swift */,
 				B3A8103C255AC47B0087E780 /* VibesAppInfo.swift */,
-				02C88C651EE05450001626AD /* Vibes.swift */,
+				02C88C651EE05450001626AD /* VibesCore.swift */,
 				377F1F651EE73A3D000706DB /* VibesResult.swift */,
 				442653A82051994400BE1E08 /* VibesAPIDelegate.swift */,
 				B343B04F2119FF920096777C /* VibesConfiguration.swift */,
@@ -715,7 +712,6 @@
 		37F193DF1F27F2070035F1E7 /* Logging */ = {
 			isa = PBXGroup;
 			children = (
-				37F1937A1F27D1730035F1E7 /* VibesURLProtocol.swift */,
 				37F193E01F27F21C0035F1E7 /* ConsoleLogger.swift */,
 				37F193E81F27F6020035F1E7 /* VibesLogger.swift */,
 				D1E6A6EC24EE789A00CBC405 /* CombinedLogger.swift */,
@@ -1128,13 +1124,12 @@
 				446B6BED203E359B002F88AE /* UpdateDeviceOperationPut.swift in Sources */,
 				373B024D1F147100007C5B2A /* AppObserver.swift in Sources */,
 				2F260FDD235FA9CD00CC403D /* GetInboxMessageOperation.swift in Sources */,
-				37F1937B1F27D1730035F1E7 /* VibesURLProtocol.swift in Sources */,
 				446B6BEA203E355D002F88AE /* VibesQueueOperation.swift in Sources */,
 				B3A8103D255AC47B0087E780 /* VibesAppInfo.swift in Sources */,
 				375DD4EA1EE06EE700696B24 /* HTTPResource.swift in Sources */,
 				B3DB6ED1260A5786002E50AC /* MigrationCallbackOperation.swift in Sources */,
 				D14214BD26C2C45D00969BB6 /* FoundationExtensions.swift in Sources */,
-				02C88C671EE05450001626AD /* Vibes.swift in Sources */,
+				02C88C671EE05450001626AD /* VibesCore.swift in Sources */,
 				375DD4FB1EE08B5600696B24 /* JSONParser.swift in Sources */,
 				37647FD21F153E2B00DD63C1 /* Date+iso8601.swift in Sources */,
 				0214AD041EE1E2F500AB1D41 /* LocalStorageType.swift in Sources */,
@@ -1183,7 +1178,6 @@
 				B3A8103E255AC47B0087E780 /* VibesAppInfo.swift in Sources */,
 				44B4B78F203E9844009D705A /* URLRequest+cURL.swift in Sources */,
 				B3DB6ED2260A5786002E50AC /* MigrationCallbackOperation.swift in Sources */,
-				44B4B7AC203E9ABA009D705A /* VibesURLProtocol.swift in Sources */,
 				375DD4F91EE07F1C00696B24 /* DeviceTypeSpec.swift in Sources */,
 				44B4B794203E9854009D705A /* AppObserver.swift in Sources */,
 				44B4B783203E957A009D705A /* UserDefaultsStorage.swift in Sources */,
@@ -1240,7 +1234,7 @@
 				2427B5AC28AFF27F00C3CF92 /* PurchaseSpec.swift in Sources */,
 				44B4B79F203E998D009D705A /* StubHTTPResourceClient.swift in Sources */,
 				02C88C831EE059D4001626AD /* HTTPResourceClientSpec.swift in Sources */,
-				44B4B789203E9815009D705A /* Vibes.swift in Sources */,
+				44B4B789203E9815009D705A /* VibesCore.swift in Sources */,
 				44B4B7A1203E99EA009D705A /* StubURLSession.swift in Sources */,
 				37C5A3571F04077A00B69225 /* CredentialManagerSpec.swift in Sources */,
 				37647FD51F153E9900DD63C1 /* EventSpec.swift in Sources */,

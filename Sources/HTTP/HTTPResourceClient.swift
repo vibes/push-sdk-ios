@@ -60,15 +60,23 @@ class HTTPResourceClient: HTTPResourceClientType {
     /// A session to use, usually URLSession.shared.
     private let session: URLSessionType
 
+    /// Optional provider for request/response logging. Evaluated per request so
+    /// it is safe before `Vibes.configure` has finished.
+    private let loggerProvider: () -> VibesLogger?
+
     /// Initialize this object.
     ///
     /// - parameters:
     ///   - baseURL: the base URL to use for this network client, e.g.
     ///   "http://example.com"
     ///   - session: the `URLSessionType` to use for making HTTP requests
-    init(baseURL: URL, session: URLSessionType = URLSession.shared) {
+    ///   - loggerProvider: returns the logger to use for this request, if any
+    init(baseURL: URL,
+         session: URLSessionType = URLSession.shared,
+         loggerProvider: @escaping () -> VibesLogger? = { nil }) {
         self.baseURL = baseURL
         self.session = session
+        self.loggerProvider = loggerProvider
     }
 
     /// Make an HTTP request for an `HTTPResource`.
@@ -83,10 +91,17 @@ class HTTPResourceClient: HTTPResourceClientType {
         var request = resource.toRequest(baseURL: baseURL)
         behavior?.modifyRequest(request: &request)
 
+        loggerProvider()?.log(request: request)
+
         let task = session.dataTask(with: request) { data, response, error in
-            guard error == nil else {
+            if let error = error {
+                self.loggerProvider()?.log(error: error)
                 self.handleError(error, completion: completion)
                 return
+            }
+
+            if let response = response {
+                self.loggerProvider()?.log(response: response, data: data)
             }
 
             guard let response = response as? HTTPURLResponse else {

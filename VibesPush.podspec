@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
     s.name              = 'VibesPush'
-    s.version           = '5.0.0'
+    s.version           = '5.0.1'
     s.summary           = 'iOS SDK for Vibes push messaging'
     s.homepage          = 'http://www.vibes.com'
 
